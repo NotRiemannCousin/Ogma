@@ -1,0 +1,35 @@
+name: Doxygen
+
+on:
+  push:
+    branches: [ master ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y graphviz mscgen
+
+      - name: Install Doxygen 1.18
+        run: |
+          wget https://github.com/doxygen/doxygen/releases/download/Release_1_18_0/doxygen-1.18.0.linux.bin.tar.gz
+          tar -xzf doxygen-1.18.0.linux.bin.tar.gz
+          sudo mv doxygen-1.18.0/bin/doxygen /usr/local/bin/
+
+      - name: Generate docs
+        run: doxygen docs/doxygen/Doxyfile
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/html
