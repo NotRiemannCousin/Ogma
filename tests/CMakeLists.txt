@@ -6,4 +6,5 @@ CPMFindPackage(
 )
 include(GoogleTest)
 
-add_subdirectory(Example)
+add_subdirectory(Parsing)
+add_subdirectory(Help)

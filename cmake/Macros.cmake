@@ -1,7 +1,7 @@
 #region Vendor and export
 
 macro(export_vendor_if_applicable VENDOR)
-    string(TOUPPER "${PROJECT_NAME}" _evia_project_upper)
+    string(TOUPPER "Ogma" _evia_project_upper)
     string(TOUPPER "${VENDOR}"       _evia_vendor_upper)
 
     set(${_evia_project_upper}_VENDORS_${_evia_vendor_upper} OFF)
@@ -24,7 +24,7 @@ macro(export_vendor_if_applicable VENDOR)
         endif()
 
         install(TARGETS ${VENDOR}
-                EXPORT ${PROJECT_NAME}Targets
+                EXPORT OgmaTargets
                 ${_evia_file_set_args}
         )
 
@@ -64,10 +64,10 @@ function(add_project_test TARGET_NAME)
     add_executable(${TARGET_NAME} ${ARGN})
 
     target_include_directories(${TARGET_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/tests)
-    target_link_libraries(${TARGET_NAME} PRIVATE ${PROJECT_NAME} GTest::gtest_main)
+    target_link_libraries(${TARGET_NAME} PRIVATE Ogma GTest::gtest_main)
 
-    if(TARGET ${PROJECT_NAME}CompilerFlags)
-        target_link_libraries(${TARGET_NAME} PRIVATE ${PROJECT_NAME}CompilerFlags)
+    if(TARGET OgmaCompilerFlags)
+        target_link_libraries(${TARGET_NAME} PRIVATE OgmaCompilerFlags)
     endif()
 
     gtest_discover_tests(${TARGET_NAME})
@@ -83,8 +83,8 @@ endfunction()
 
 # "This dep has a LLDB!!"
 macro(register_lldb_script DEP_NAME)
-    if(${DEP_NAME} STREQUAL ${PROJECT_NAME})
-        set(_lldb_script_path "${CMAKE_CURRENT_SOURCE_DIR}/tools/lldb/${PROJECT_NAME}Lldb.py")
+    if(${DEP_NAME} STREQUAL Ogma)
+        set(_lldb_script_path "${CMAKE_CURRENT_SOURCE_DIR}/tools/lldb/OgmaLldb.py")
     else()
         set(_lldb_script_path "${${DEP_NAME}_SOURCE_DIR}/tools/lldb/${DEP_NAME}Lldb.py")
     endif()

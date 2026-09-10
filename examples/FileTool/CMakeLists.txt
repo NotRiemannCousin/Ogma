@@ -1,0 +1,3 @@
+add_executable(FileToolExample main.cpp)
+target_include_directories(FileToolExample PRIVATE include)
+target_link_libraries(FileToolExample PRIVATE Ogma)

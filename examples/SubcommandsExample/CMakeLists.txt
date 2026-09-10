@@ -1,0 +1,3 @@
+add_executable(SubcommandsExample main.cpp)
+target_include_directories(SubcommandsExample PRIVATE include)
+target_link_libraries(SubcommandsExample PRIVATE Ogma)

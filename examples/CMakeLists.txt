@@ -1,0 +1,6 @@
+add_subdirectory(SonusLike)
+add_subdirectory(FileTool)
+add_subdirectory(NumericExample)
+add_subdirectory(TimeExample)
+add_subdirectory(FilesAndCollectionsExample)
+add_subdirectory(SubcommandsExample)

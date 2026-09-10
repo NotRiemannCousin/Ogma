@@ -1,0 +1,3 @@
+add_executable(FilesAndCollectionsExample main.cpp)
+target_include_directories(FilesAndCollectionsExample PRIVATE include)
+target_link_libraries(FilesAndCollectionsExample PRIVATE Ogma)

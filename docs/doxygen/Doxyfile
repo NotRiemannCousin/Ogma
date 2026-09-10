@@ -42,7 +42,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "MyProjectName"
+PROJECT_NAME           = "Ogma"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
@@ -61,7 +61,7 @@ PROJECT_BRIEF          = "My Project Description"
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = MyProjectName-logo.webp
+PROJECT_LOGO           = Ogma-logo.webp
 
 # With the PROJECT_ICON tag one can specify an icon that is included in the tabs
 # when the HTML document is shown. Doxygen will copy the logo to the output
@@ -135,7 +135,7 @@ BRIEF_MEMBER_DESC      = YES
 # brief descriptions will be completely suppressed.
 # The default value is: YES.
 
-REPEAT_BRIEF           = YES
+REPEAT_BRIEF           = NO
 
 # This tag implements a quasi-intelligent brief description abbreviator that is
 # used to form the text in various listings. Each string in this list, if found
@@ -201,7 +201,7 @@ STRIP_FROM_PATH        =
 
 STRIP_FROM_INC_PATH    =
 
-# If the SHORT_NAMES tag is set to YES, Doxygen will generate much shorter (but
+# If the shortNameS tag is set to YES, Doxygen will generate much shorter (but
 # less readable) file names. This can be useful if your file system doesn't
 # support long names like on DOS, Mac, or CD-ROM.
 # The default value is: NO.

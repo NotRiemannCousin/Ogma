@@ -11,9 +11,10 @@
   <!-- Example pageset -->
     <tab type="usergroup" title="Getting Started" visible="yes" url="@ref getting-started">
       <tab type="user" url="@ref getting-started" title="Getting Started"/>
+      <tab type="user" url="@ref positional-vs-named" title="Positional vs Named Arguments"/>
     </tab>
 
-    <tab type="user" url="https://github.com/NotRiemannCousin/MyProjectName" title="GitHub Repository"/>
+    <tab type="user" url="https://github.com/NotRiemannCousin/Ogma" title="GitHub Repository"/>
 
 
     <tab type="usergroup" title="API Reference" visible="yes">

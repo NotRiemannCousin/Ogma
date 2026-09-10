@@ -1,0 +1,13 @@
+add_project_test(ExampleTests
+        MixedTests.cpp
+        EnumTests.cpp
+        NumericTests.cpp
+        ContainerTests.cpp
+        ChronoTests.cpp
+        UserDefinedTests.cpp
+        FilesystemTests.cpp
+        StringTests.cpp
+        ArgumentTests.cpp
+        SubcommandTests.cpp
+        TableTests.cpp
+)

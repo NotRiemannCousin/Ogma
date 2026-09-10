@@ -1,0 +1,3 @@
+add_executable(NumericExample main.cpp)
+target_include_directories(NumericExample PRIVATE include)
+target_link_libraries(NumericExample PRIVATE Ogma)
