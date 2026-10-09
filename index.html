@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Ogma" />
+<meta property="og:image" content="https://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta property="og:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="hhttps://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta name="twitter:title" content="Ogma" />
+<meta name="twitter:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<!-- END twitter metadata -->
+<title>Ogma: Ogma</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="theme-round.css" rel="stylesheet" type="text/css"/>
+<link href="theme-robot.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-msc.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/NotRiemannCousin/Ogma" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Ogma-logo.webp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Ogma
+   </div>
+   <div id="projectbrief">My Project Description</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+<div id="theme-selection">
+ <label for="theme-select">Theme:</label>
+ <select id="theme-select">
+  <option value="theme-default">Default</option>
+  <option value="theme-round">Round</option>
+  <option value="theme-robot">Robot</option>
+ </select>
+</div>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title"><a class="el" href="namespace_ogma.html">Ogma</a> </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a></p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+A reflection-based, scope-based C++26 argument parser</h1>
+<p><img src="Ogma-logo.webp" alt="Ogma" title="Ogma, the Celtic god of eloquence and writing" class="inline"/></p>
+<p><a class="el" href="namespace_ogma.html">Ogma</a> is a compile-time argument parser built on top of C++26 static reflection and annotations. It is inspired by Rust's Clap derive API, so there is no separate schema, no builder, no runtime registration step, and no generated code to check. The command line is described by an ordinary struct with a few annotated members, and reflection is what lets <a class="el" href="namespace_ogma.html">Ogma</a> read that description directly off the struct instead of asking you to restate it somewhere else. Named after the Celtic god of eloquence, knowledge, and writing, <a class="el" href="namespace_ogma.html">Ogma</a> takes the position that a declaration should be allowed to speak for itself.</p>
+<p>Before anything else, this is the most idiosyncratic library from my "pantheon project". It does not parse arguments the standard way, and the sections below explain why the standard way was rejected.</p>
+<blockquote class="doxtable">
+<p><b>Status:</b> early development, tested on GCC 16 (experimental reflection). See Requirements. </p>
+</blockquote>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+The big rule, nobody is special</h1>
+<p>There is exactly one special type in <a class="el" href="namespace_ogma.html">Ogma</a> and it is <span class="tt">std::optional</span>. Everything else follows the same two questions. How can this member be invoked, by a bare token, by its flag, or only by its flag? And is it required? Required means the member must be filled, either because a bare token reached it (positional) or because its flag was typed. The only escape is <span class="tt">std::optional</span>, which is also the only type that can be left unset. The details live in Positional vs named.</p>
+<p>This rule is what keeps the library small. There are no global arguments, no special-case booleans, no help text stored anywhere in the grammar. <span class="tt">--help</span> and <span class="tt">--version</span> are intercepted before any member lookup, and their names are reserved at compile time, so no member can ever claim them. That is the entire machinery behind the free help, two flags and two compile-time checks.</p>
+<p>Every annotated member goes through the same path. The engine builds two compile-time tables for each struct, the named flags and the positional queue, and every member enters them through the same contract. A <span class="tt">bool</span> is not special-cased anywhere in the engine, it is a regular <span class="tt">TypeParser&lt;bool&gt;</span> specialization that happens to consume nothing and to generate a <span class="tt">--no-name</span> spelling. When a parser is that transparent, nothing needs a footnote.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+Tree traversal instead of flatten</h1>
+<p>In almost every popular library nested classes are treated with flattening. Some solve conflicts with namespaces, others just guarantee that there is no name collision, and some ignore that this can happen, but the general idea is the same. There is no idea of scopes, it is a linked list of options with no hierarchy or boundaries. This dates back to ancient times, and I personally have not been able to find out when it became the rule or if anyone has ever questioned it. (Nearly) every argument-parsing library, in nearly every language (even Haskell!!), takes this path.</p>
+<p>It works like this. Take a sub-options struct, promote its fields straight into the parent's own namespace, and parse the whole thing as one flat bag of flags. Even parsers built in languages that otherwise go out of their way to avoid this kind of implicit merging take this path. It offers less resistance once you have two levels of options and one flag namespace to put them in. Even when the library uses namespaces (so <span class="tt">--host-port</span> does not collide with <span class="tt">--target-port</span>), they still read like a flat bag of flags.</p>
+<p>Subcommands are the only thing that normally introduces the concept of scopes. When you enter a subcommand, you do not leave anymore. Every option is now part of the subcommand's namespace and does not affect the parent flags.</p>
+<p>Ok, it is practical, everyone is used to it, but I do not like it.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+How Ogma does it</h2>
+<p>Every level of an <a class="el" href="namespace_ogma.html">Ogma</a> struct is parsed recursively through the primary <span class="tt">TypeParser&lt;T&gt;</span> template, so there is no bag of flags. A struct with no specialization IS the struct-walking engine, and that is the same engine at the root and at every nested level. There is no separate dispatch for nested members, an annotated struct member simply reaches <span class="tt">TypeParser&lt;FieldT&gt;::Parse</span> like any other member, and the engine handles it the same way it handles the root. The extension contract is documented in TypeParser.</p>
+<p>Scopes are explicit on both sides. You enter one by typing the member's flag (<span class="tt">--inner</span>), or the subcommand's bare name. You leave one with <span class="tt">-</span>, which ends exactly one level of nesting and hands the remaining arguments back to the parent. This is what "explicit enter, explicit exit" buys. A nested struct never has to invent a subcommand name just to exist, and two structs anywhere in the tree can each declare a field with the same name without either one ever knowing about the other, with no namespaces. The full rules live in <a class="el" href="scopes_8md.html" title="docs/Scopes.md">Scopes</a>.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+Is flatten bad?</h2>
+<p>No. <a class="el" href="namespace_ogma.html">Ogma</a> is a deliberate, opinionated choice, and the honest reason it exists is closer to "I like recursion and
+trees" than to any problem flatten failed to solve. As I said earlier, there are ways to solve the naming conflict problem using flattening, but I just chose to refuse to implement it.</p>
+<p>Despite being vulnerable to naming collisions (in the basic form), there is another class of ambiguities that flattening solves by simply merging all the structs into one namespace. You do not need to exit from a scope because you can only enter subcommands, but they do not let you leave them. No exiting from a namespace means no need to know when to stop parsing and return to the parent. <a class="el" href="namespace_ogma.html">Ogma</a> needs explicit enter and explicit exit for subcommands and nested classes alike, see <a class="el" href="scopes_8md.html" title="docs/Scopes.md">Scopes</a>.</p>
+<p>Tree-shaped parsing does buy something real in return. It will probably feel backwards before it feels natural, whether that trade is worth it is a matter of taste as much as engineering (fair reaction, the ceremony that flatten simply does not ask for). However, it gets easier to read once the boundary stops feeling surprising.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+Subcommands</h1>
+<p>A <span class="tt">VariantArg</span> member declares a variant-backed subcommand. A bare token naming one of the declared cases opens the branch, which then owns every following token exactly like any other scope, until <span class="tt">-</span> closes it or the arguments end.</p>
+<div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keyword">constexpr</span> <a class="code hl_struct" href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html">Ogma::VariantArg::VariantBranch</a> kCommands[] = {</div>
+<div class="line">    { <span class="stringliteral">&quot;compress&quot;</span>, <span class="stringliteral">&quot;Compress files.&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;extract&quot;</span> , <span class="stringliteral">&quot;Extract files.&quot;</span>  }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">struct </span>[[ =<a class="code hl_struct" href="struct_ogma_1_1_app_info.html">Ogma::AppInfo</a>{ <span class="stringliteral">&quot;filetool&quot;</span>, <span class="stringliteral">&quot;1.0.0&quot;</span>, <span class="stringliteral">&quot;A file archiver.&quot;</span> } ]] App {</div>
+<div class="line">    [[ =<a class="code hl_struct" href="struct_ogma_1_1_variant_arg.html">Ogma::VariantArg</a>{ kCommands, std::size(kCommands) } ]]</div>
+<div class="line">    std::variant&lt;Compress, Extract&gt; command;</div>
+<div class="line">};</div>
+<div class="ttc" id="astruct_ogma_1_1_app_info_html"><div class="ttname"><a href="struct_ogma_1_1_app_info.html">Ogma::AppInfo</a></div><div class="ttdoc">Metadata for the root application type.</div><div class="ttdef"><b>Definition</b> _base.hpp:62</div></div>
+<div class="ttc" id="astruct_ogma_1_1_variant_arg_1_1_variant_branch_html"><div class="ttname"><a href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html">Ogma::VariantArg::VariantBranch</a></div><div class="ttdef"><b>Definition</b> _base.hpp:48</div></div>
+<div class="ttc" id="astruct_ogma_1_1_variant_arg_html"><div class="ttname"><a href="struct_ogma_1_1_variant_arg.html">Ogma::VariantArg</a></div><div class="ttdoc">Describes the branches of a variant-backed subcommand.</div><div class="ttdef"><b>Definition</b> _base.hpp:47</div></div>
+</div><!-- fragment --><p>A subcommand is not reachable through a <span class="tt">--</span> spelling, <span class="tt">--compress</span> is nobody's flag, and the prefix is exactly what keeps the flag namespace and the subcommand namespace separate. Flags of the parent are read before the dispatch, so <span class="tt">app --verbose compress</span> works and <span class="tt">app compress --verbose</span> fails if <span class="tt">--verbose</span> belongs to the parent.</p>
+<p>A branch is a full engine, not a special mode. Inside it, bare tokens fill positional members, its own flags answer, nested structs open their own scopes, and <span class="tt">-</span> closes it. One dispatch per struct, and the command member must be the last annotated member of its struct (bare tokens fill positional members in declaration order, so anything declared after the subcommand would never be reachable by position).</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+Structural positionals</h1>
+<p>Some types are positional and can have their flag omitted (the argument is deduced by position), and others can only be specified by naming them, to reduce ambiguity. The default engine needs the name to know which member to enter, the same way it needs the subcommand's bare name. But a string can be positional, because reading a string is a simple task. The full protocol lives in Positional vs named.</p>
+<div class="fragment"><div class="line"><span class="comment">// &quot;name&quot; can be deduced by both &quot;--name abracadabra --no-bind&quot; and &quot;abracadabra --no-bind&quot;, because `name`</span></div>
+<div class="line"><span class="comment">// does not need its flag to know that &quot;abracadabra&quot; is related to it, but &quot;--bind&quot; can only define a</span></div>
+<div class="line"><span class="comment">// value for `bind` because their flag was specified.</span></div>
+<div class="line"><span class="keyword">struct </span>Example1 {</div>
+<div class="line">    [[ =<a class="code hl_struct" href="struct_ogma_1_1_arg.html">Ogma::Arg</a>{ <span class="stringliteral">&quot;name&quot;</span> } ]] std::string name;</div>
+<div class="line">    [[ =<a class="code hl_struct" href="struct_ogma_1_1_arg.html">Ogma::Arg</a>{ <span class="stringliteral">&quot;bind&quot;</span> }, =<a class="code hl_variable" href="namespace_ogma.html#a933e9291b379fb8b16625e6f062e386e">Ogma::boolArg</a> ]] <span class="keywordtype">bool</span> bind;</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// This cannot be deduced by &quot;--name abracadabra --no-bind -- 5&quot;, because from a logic perspective &quot;--name&quot;</span></div>
+<div class="line"><span class="comment">// could be a flag from Example1 (omitting the flag for `child` itself) or a mistyped flag from Example2.</span></div>
+<div class="line"><span class="comment">// It needs to be &quot;--child --name abracadabra --no-bind -- 5&quot;.</span></div>
+<div class="line"><span class="keyword">struct </span>Example2 {</div>
+<div class="line">    [[ =Ogma::Arg{ <span class="stringliteral">&quot;child&quot;</span> } ]] Example1 child;</div>
+<div class="line">    [[ =Ogma::Arg{ <span class="stringliteral">&quot;value&quot;</span> } ]] <span class="keywordtype">int</span>      value;</div>
+<div class="line">};</div>
+<div class="ttc" id="anamespace_ogma_html_a933e9291b379fb8b16625e6f062e386e"><div class="ttname"><a href="namespace_ogma.html#a933e9291b379fb8b16625e6f062e386e">Ogma::boolArg</a></div><div class="ttdeci">constexpr BoolArg boolArg</div><div class="ttdoc">The annotation value used to mark a boolean argument.</div><div class="ttdef"><b>Definition</b> BasicTypes.hpp:29</div></div>
+<div class="ttc" id="astruct_ogma_1_1_arg_html"><div class="ttname"><a href="struct_ogma_1_1_arg.html">Ogma::Arg</a></div><div class="ttdoc">The pivot annotation from this library. Describes a named argument.</div><div class="ttdef"><b>Definition</b> _base.hpp:18</div></div>
+</div><!-- fragment --><p>Since <span class="tt">rawHuman</span> and <span class="tt">unixTime</span> below are positional, a <span class="tt">--raw</span> flag typed on the command line could plausibly belong to either <span class="tt">ChronoOptions</span> itself or to <span class="tt">rawHuman</span>. There is no selector word to tell them apart, unlike a <span class="tt">VariantArg</span> subcommand. Rather than flatten the two structs into one namespace (which would make <span class="tt">--raw</span> collide with anything else named <span class="tt">raw</span> anywhere in the tree) or invent a prefixed spelling like <span class="tt">--raw-human-raw</span>, the closing token is what marks the boundary.</p>
+<div class="fragment"><div class="line">--raw 500 --human 1s - --seconds 2 --milliseconds 2500</div>
+</div><!-- fragment --><p>The same explicit boundary is what makes a repeated structural positional possible. A <span class="tt">std::vector&lt;RawHumanOptions&gt;</span> parses one <span class="tt">RawHumanOptions</span> per element, each one closed by its own <span class="tt">-</span>. Omitting the boundary between two elements is read as repeated options for the current element, not as the start of a new one. The <span class="tt">-</span> is what draws the line, not position.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+Annotations</h1>
+<p>Annotations are the mechanism that lets a declaration carry intent. Plain reflection only sees the shape of a struct, names, types, default values. It will never know that <span class="tt">downloadVideos</span> should also answer to <span class="tt">--videos</span>, or that a field is constrained to a range, or which text to show in the help. That is intent, and annotations (<span class="tt">[[ =expr ]]</span>, from <a href="https://wg21.link/p3394">P3394</a>) attach it directly to the field, instead of into a parallel table.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Annotation  </th><th class="markdownTableHeadNone">Purpose  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Arg</span>  </td><td class="markdownTableBodyNone">Gives a member its long option name, description and hidden state.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">VariantArg</span>  </td><td class="markdownTableBodyNone">Describes the branches of a variant-backed subcommand.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">AppInfo</span>  </td><td class="markdownTableBodyNone">Metadata (name, version, description) for the root application type.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">BoolArg</span>  </td><td class="markdownTableBodyNone">Makes a <span class="tt">bool</span> member consume an explicit "true"/"false" value. Without it, a bool is an on/off switch.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Alias</span>  </td><td class="markdownTableBodyNone">Adds an alternative spelling to an enum enumerator.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">CaseInsensitive</span>  </td><td class="markdownTableBodyNone">Makes enum matching ignore letter case.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">MustExist</span>, <span class="tt">FileOnly</span>, <span class="tt">DirOnly</span>  </td><td class="markdownTableBodyNone">Validate filesystem paths.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Range</span>, <span class="tt">FRange</span>  </td><td class="markdownTableBodyNone">Constrain an integral or floating-point value to an inclusive range.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">IntegerFmt</span> (<span class="tt">hexNumber</span>, <span class="tt">binNumber</span>, <span class="tt">siNumber</span>)  </td><td class="markdownTableBodyNone">Accept hexadecimal, binary, or SI-suffixed integers.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">FloatFmt</span> (<span class="tt">siFloat</span>)  </td><td class="markdownTableBodyNone">Accepts SI-suffixed floats.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">DurationFmt</span>  </td><td class="markdownTableBodyNone">Enables human-readable duration parsing (<span class="tt">1s 250ms</span>, ...).  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">TimePointFmt</span> (<span class="tt">iso8601</span>, <span class="tt">unixSeconds</span>, <span class="tt">unixMilliseconds</span>)  </td><td class="markdownTableBodyNone">Selects the wire format for a time point.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Overwrite</span>  </td><td class="markdownTableBodyNone">Makes a repeated container option replace its contents instead of accumulating.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Fwd&lt;...&gt;</span>  </td><td class="markdownTableBodyNone">Forwards annotation values to the elements of a container member.  </td></tr>
+</table>
+<p><span class="tt">Arg::description</span> is the member's prose in the help page. The parser's own modifiers (<span class="tt">[format: hex]</span>, <span class="tt">[range: 0..100]</span>) are appended after it automatically, and <span class="tt">Arg::hidden</span> removes the member from the page entirely.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
+Help</h1>
+<p>Every page is rendered from the same annotations that drive parsing, so the page and the parser cannot drift apart. <span class="tt">--help</span> answers at every scope, showing the page of the scope you are in (<span class="tt">app --help</span> shows the root, <span class="tt">app compress --help</span> shows the branch), and <span class="tt">--version</span> answers at the root when <span class="tt">AppInfo</span> is declared. The page anatomy, the usage grammar and the modifiers are detailed in <a class="el" href="help-page.html" title="Help">Help</a>.</p>
+<p>The page is plain text, with no ANSI escapes, so it is safe to pipe, diff and parse. Styling, if you want any, happens at the printing boundary, on your side of the library.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
+Error messages</h1>
+<p>Errors chain from the outside in one context prefix per scope crossed. A leaf owns the "what" (<span class="tt">invalid number: 'abc'</span>), the engine owns the "where".</p>
+<div class="fragment"><div class="line">error: serve: --retries: invalid number: &#39;abc&#39;</div>
+</div><!-- fragment --><p>Missing required members are reported together, one line each, and a missing subcommand lists every accepted case.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
+Requirements</h1>
+<ul>
+<li>Windows 10 or newer / Linux</li>
+<li>A compiler with C++26 static reflection (<a href="https://wg21.link/p2996">P2996</a>) and annotations (<a href="https://wg21.link/p3394">P3394</a>) support, tested on GCC 16 with <span class="tt">-freflection</span></li>
+<li>CMake 3.29 or newer</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
+Installation</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
+CPM</h2>
+<div class="fragment"><div class="line">CPMAddPackage(</div>
+<div class="line">        NAME Ogma</div>
+<div class="line">        GITHUB_REPOSITORY NotRiemannCousin/Ogma</div>
+<div class="line">        GIT_TAG main</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">target_link_libraries(your_target PRIVATE Ogma)</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
+What Ogma deliberately does not have</h1>
+<p>Some absences are design decisions, and they are listed here so they are not mistaken for gaps.</p>
+<ul>
+<li><b>No short flags.</b> There is no <span class="tt">-v</span> and never a packed <span class="tt">-cve</span>. <span class="tt">-</span> is the closing token, and giving single-dash spellings to flags would make every scope boundary ambiguous. If you want a shorter alias for a long flag, declare it with <span class="tt">Arg</span> and accept the longer spelling.</li>
+<li><b>No global arguments.</b> A flag belongs to the scope that declares it. After a subcommand, parent flags are unknown, and <span class="tt">-</span> is how you get back to them. Globals can be simulated by reading them before the dispatch, which is the same order the parser enforces anyway.</li>
+<li><b>No flattening, no namespaces.</b> See Tree traversal instead of flatten. A nested struct keeps its boundaries, and collisions are impossible by construction because scopes never merge.</li>
+<li><b>No builder, no registration, no generated code.</b> The struct is the schema. If you need to restate it anywhere else, the design failed.</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
+Further reading</h1>
+<ul>
+<li><a class="el" href="scopes.html" title="Scopes">Scopes</a>, what a scope is, entering and leaving, and why flags never cascade</li>
+<li><a class="el" href="positional-vs-named.html" title="Positional vs Named Arguments">Positional vs named</a>, the two questions that define every member</li>
+<li><a class="el" href="help-page.html" title="Help">Help</a>, page anatomy, the usage grammar and the modifiers</li>
+<li><a class="el" href="type-parser.html" title="TypeParser structure">TypeParser</a>, the extension contract for custom types </li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
+Roadmap</h1>
+<ul>
+<li>Compile-fail test infrastructure (malformed declarations are already compile-time errors, they just lack pinned tests)</li>
+<li>More standard-library type families</li>
+<li>Package-manager releases </li>
+</ul>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"></a>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

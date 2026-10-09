@@ -1,0 +1,4 @@
+var _type_parser_2__base_2_numeric_8hpp =
+[
+    [ "Ogma::TypeParser&lt; T, ArgDefinition &gt;", "struct_ogma_1_1_type_parser_3_01_t_00_01_arg_definition_01_4.html", null ]
+];

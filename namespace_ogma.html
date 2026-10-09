@@ -1,0 +1,1238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Ogma" />
+<meta property="og:image" content="https://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta property="og:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="hhttps://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta name="twitter:title" content="Ogma" />
+<meta name="twitter:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<!-- END twitter metadata -->
+<title>Ogma: Ogma Namespace Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="theme-round.css" rel="stylesheet" type="text/css"/>
+<link href="theme-robot.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-msc.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/NotRiemannCousin/Ogma" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Ogma-logo.webp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Ogma
+   </div>
+   <div id="projectbrief">My Project Description</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+<div id="theme-selection">
+ <label for="theme-select">Theme:</label>
+ <select id="theme-select">
+  <option value="theme-default">Default</option>
+  <option value="theme-round">Round</option>
+  <option value="theme-robot">Robot</option>
+ </select>
+</div>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_ogma.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Ogma Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:Utils" id="r_Utils"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_ogma_1_1_utils.html">Utils</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:Alias" id="r_Alias"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_alias.html">Alias</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a declaration an additional name.  <a href="struct_ogma_1_1_alias.html#details">More...</a><br /></td></tr>
+<tr class="memitem:AllowSpecialValues" id="r_AllowSpecialValues"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_allow_special_values.html">AllowSpecialValues</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows special floating-point values.  <a href="struct_ogma_1_1_allow_special_values.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Append" id="r_Append"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_append.html">Append</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a repeated container option append its current contents. This value is specified by consistency, but given that is the default in this library every class ignores it.  <a href="struct_ogma_1_1_append.html#details">More...</a><br /></td></tr>
+<tr class="memitem:AppInfo" id="r_AppInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_app_info.html">AppInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata for the root application type.  <a href="struct_ogma_1_1_app_info.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Arg" id="r_Arg"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_arg.html">Arg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pivot annotation from this library. Describes a named argument.  <a href="struct_ogma_1_1_arg.html#details">More...</a><br /></td></tr>
+<tr class="memitem:BoolArg" id="r_BoolArg"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_bool_arg.html">BoolArg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a boolean member consume an explicit "true" or "false" value. Without this annotation, a named bool is an on/off switch.  <a href="struct_ogma_1_1_bool_arg.html#details">More...</a><br /></td></tr>
+<tr class="memitem:CaseInsensitive" id="r_CaseInsensitive"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_case_insensitive.html">CaseInsensitive</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes enum parsing case insensitive.  <a href="struct_ogma_1_1_case_insensitive.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ConstString" id="r_ConstString"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_const_string.html">ConstString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string with compile time static storage.  <a href="struct_ogma_1_1_const_string.html#details">More...</a><br /></td></tr>
+<tr class="memitem:DirOnly" id="r_DirOnly"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_dir_only.html">DirOnly</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requires a path to refer to an existing directory.  <a href="struct_ogma_1_1_dir_only.html#details">More...</a><br /></td></tr>
+<tr class="memitem:DurationFmt" id="r_DurationFmt"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_duration_fmt.html">DurationFmt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables human readable duration parsing.  <a href="struct_ogma_1_1_duration_fmt.html#details">More...</a><br /></td></tr>
+<tr class="memitem:FileOnly" id="r_FileOnly"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_file_only.html">FileOnly</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requires a path to refer to an existing regular file.  <a href="struct_ogma_1_1_file_only.html#details">More...</a><br /></td></tr>
+<tr class="memitem:FloatFmt" id="r_FloatFmt"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_float_fmt.html">FloatFmt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls floating-point value parsing.  <a href="struct_ogma_1_1_float_fmt.html#details">More...</a><br /></td></tr>
+<tr class="memitem:FRange" id="r_FRange"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_f_range.html">FRange</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constrains a floating point argument to an inclusive range.  <a href="struct_ogma_1_1_f_range.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Fwd" id="r_Fwd"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_fwd.html">Fwd</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards annotation values to the next nested parser level.  <a href="struct_ogma_1_1_fwd.html#details">More...</a><br /></td></tr>
+<tr class="memitem:HelpRequested" id="r_HelpRequested"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_help_requested.html">HelpRequested</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown by the struct-walking engine when a scope intercepts "--help" or "--version". Carries the page exactly as HelpText renders it.  <a href="struct_ogma_1_1_help_requested.html#details">More...</a><br /></td></tr>
+<tr class="memitem:IntegerFmt" id="r_IntegerFmt"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_integer_fmt.html">IntegerFmt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls integral value parsing.  <a href="struct_ogma_1_1_integer_fmt.html#details">More...</a><br /></td></tr>
+<tr class="memitem:MustExist" id="r_MustExist"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_must_exist.html">MustExist</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requires a path to exist.  <a href="struct_ogma_1_1_must_exist.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Overwrite" id="r_Overwrite"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_overwrite.html">Overwrite</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a repeated container option replace its current contents. Without this annotation, repeated containers accumulate values.  <a href="struct_ogma_1_1_overwrite.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Range" id="r_Range"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_range.html">Range</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constrains an integral argument to an inclusive range.  <a href="struct_ogma_1_1_range.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TimePointFmt" id="r_TimePointFmt"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_time_point_fmt.html">TimePointFmt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls parsing of chrono time point values.  <a href="struct_ogma_1_1_time_point_fmt.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser" id="r_TypeParser"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser.html">TypeParser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialise this to teach <a class="el" href="namespace_ogma.html">Ogma</a> how to parse <code>T</code> from command-line tokens. It's very similar to <code>std::formatter</code>, but for reading (see <a class="el" href="type-parser.html" title="TypeParser structure">TypeParser structure</a>).  <a href="struct_ogma_1_1_type_parser.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20bool_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20bool_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01bool_00_01_arg_definition_01_4.html">TypeParser&lt; bool, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialization for <code>bool</code>.  <a href="struct_ogma_1_1_type_parser_3_01bool_00_01_arg_definition_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20std_3A_3Achrono_3A_3Aduration_3C_20Rep_2C_20Period_20_3E_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20std_3A_3Achrono_3A_3Aduration_3C_20Rep_2C_20Period_20_3E_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_arg_definition_01_4.html">TypeParser&lt; std::chrono::duration&lt; Rep, Period &gt;, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialization for <code>std::chrono::duration&lt;Rep, Period&gt;</code>.  <a href="struct_ogma_1_1_type_parser_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_arg_definition_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20std_3A_3Achrono_3A_3Atime_5Fpoint_3C_20Clock_2C_20Duration_20_3E_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20std_3A_3Achrono_3A_3Atime_5Fpoint_3C_20Clock_2C_20Duration_20_3E_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01std_1_1chrono_1_1time__point_3_01_clock_00_01_duration_01_4_00_01_arg_definition_01_4.html">TypeParser&lt; std::chrono::time_point&lt; Clock, Duration &gt;, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialization for <code>std::chrono::time_point&lt;Clock, Duration&gt;</code>.  <a href="struct_ogma_1_1_type_parser_3_01std_1_1chrono_1_1time__point_3_01_clock_00_01_duration_01_4_00_01_arg_definition_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20std_3A_3Afilesystem_3A_3Apath_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20std_3A_3Afilesystem_3A_3Apath_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01std_1_1filesystem_1_1path_00_01_arg_definition_01_4.html">TypeParser&lt; std::filesystem::path, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialization for <code>std::filesystem::path</code>.  <a href="struct_ogma_1_1_type_parser_3_01std_1_1filesystem_1_1path_00_01_arg_definition_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20std_3A_3Amap_3C_20std_3A_3Astring_2C_20std_3A_3Astring_2C_20Compare_2C_20Alloc_20_3E_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20std_3A_3Amap_3C_20std_3A_3Astring_2C_20std_3A_3Astring_2C_20Compare_2C_20Alloc_20_3E_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01std_1_1map_3_01std_1_1string_00_01std_1_1string_00_01_compare_0091960c84323a1550962fbcc6b615d0f4.html">TypeParser&lt; std::map&lt; std::string, std::string, Compare, Alloc &gt;, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialisation for <code>"key=value"</code> options.  <a href="struct_ogma_1_1_type_parser_3_01std_1_1map_3_01std_1_1string_00_01std_1_1string_00_01_compare_0091960c84323a1550962fbcc6b615d0f4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20std_3A_3Aoptional_3C_20T_20_3E_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20std_3A_3Aoptional_3C_20T_20_3E_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01std_1_1optional_3_01_t_01_4_00_01_arg_definition_01_4.html">TypeParser&lt; std::optional&lt; T &gt;, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialization for <code>std::optional&lt;T&gt;</code>.  <a href="struct_ogma_1_1_type_parser_3_01std_1_1optional_3_01_t_01_4_00_01_arg_definition_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20std_3A_3Aset_3C_20T_2C_20Compare_20_3E_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20std_3A_3Aset_3C_20T_2C_20Compare_20_3E_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01std_1_1set_3_01_t_00_01_compare_01_4_00_01_arg_definition_01_4.html">TypeParser&lt; std::set&lt; T, Compare &gt;, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialisation for <code>std::set</code>.  <a href="struct_ogma_1_1_type_parser_3_01std_1_1set_3_01_t_00_01_compare_01_4_00_01_arg_definition_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20std_3A_3Astring_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20std_3A_3Astring_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01std_1_1string_00_01_arg_definition_01_4.html">TypeParser&lt; std::string, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialization for <code>std::string</code>.  <a href="struct_ogma_1_1_type_parser_3_01std_1_1string_00_01_arg_definition_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20std_3A_3Aunordered_5Fset_3C_20T_2C_20Hash_2C_20Eq_20_3E_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20std_3A_3Aunordered_5Fset_3C_20T_2C_20Hash_2C_20Eq_20_3E_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01std_1_1unordered__set_3_01_t_00_01_hash_00_01_eq_01_4_00_01_arg_definition_01_4.html">TypeParser&lt; std::unordered_set&lt; T, Hash, Eq &gt;, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialisation for <code>std::unordered_set</code>.  <a href="struct_ogma_1_1_type_parser_3_01std_1_1unordered__set_3_01_t_00_01_hash_00_01_eq_01_4_00_01_arg_definition_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20std_3A_3Avector_3C_20T_20_3E_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20std_3A_3Avector_3C_20T_20_3E_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01std_1_1vector_3_01_t_01_4_00_01_arg_definition_01_4.html">TypeParser&lt; std::vector&lt; T &gt;, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialisation for a std::vector.  <a href="struct_ogma_1_1_type_parser_3_01std_1_1vector_3_01_t_01_4_00_01_arg_definition_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TypeParser_3C_20T_2C_20ArgDefinition_20_3E" id="r_TypeParser_3C_20T_2C_20ArgDefinition_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_type_parser_3_01_t_00_01_arg_definition_01_4.html">TypeParser&lt; T, ArgDefinition &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a> specialization for scoped and unscoped enum types.  <a href="struct_ogma_1_1_type_parser_3_01_t_00_01_arg_definition_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ValueSpec" id="r_ValueSpec"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_value_spec.html">ValueSpec</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct used to show the help information about a flag.  <a href="struct_ogma_1_1_value_spec.html#details">More...</a><br /></td></tr>
+<tr class="memitem:VariantArg" id="r_VariantArg"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_ogma_1_1_variant_arg.html">VariantArg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the branches of a variant-backed subcommand.  <a href="struct_ogma_1_1_variant_arg.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-concepts" class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:IsPositionalConcept" id="r_IsPositionalConcept"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="concept_ogma_1_1_is_positional_concept.html">IsPositionalConcept</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if T is a <a class="el" href="positional-vs-named.html" title="Positional vs Named Arguments">positional argument</a>. <br /></td></tr>
+<tr class="memitem:IsNamedOnlyConcept" id="r_IsNamedOnlyConcept"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="concept_ogma_1_1_is_named_only_concept.html">IsNamedOnlyConcept</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if T is a <a class="el" href="positional-vs-named.html" title="Positional vs Named Arguments">named only argument</a>. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ac53fc9e840f3c4283d26fb90ab70eb60" id="r_ac53fc9e840f3c4283d26fb90ab70eb60"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ac53fc9e840f3c4283d26fb90ab70eb60">ArgList</a> = std::vector&lt;std::string_view&gt;</td></tr>
+<tr class="memitem:aa4304085ebb1a4108247cc9350eaddb4" id="r_aa4304085ebb1a4108247cc9350eaddb4"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a> = std::span&lt;const std::string_view&gt;</td></tr>
+<tr class="memitem:a9d769eeb125646755ee34f72b19f8525" id="r_a9d769eeb125646755ee34f72b19f8525"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a9d769eeb125646755ee34f72b19f8525 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a9d769eeb125646755ee34f72b19f8525">Result</a> = std::expected&lt;std::pair&lt;T, <a class="el" href="#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a>&gt;, std::string&gt;</td></tr>
+<tr class="memitem:a8c338596a96a08ec87ad8e5ee8adeac3" id="r_a8c338596a96a08ec87ad8e5ee8adeac3"><td class="memTemplParams" colspan="2">template&lt;auto Info&gt; </td></tr>
+<tr class="memitem:a8c338596a96a08ec87ad8e5ee8adeac3 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a8c338596a96a08ec87ad8e5ee8adeac3">TypeOf</a> = typename [: std::meta::type_of(Info) :]</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ac71919acebe7566085aa7e053379adfe" id="r_ac71919acebe7566085aa7e053379adfe"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#ac71919acebe7566085aa7e053379adfe">TimePointFormat</a> { <a class="el" href="#ac71919acebe7566085aa7e053379adfeaa453cda7db268357e599950dbd7b1dd5">Iso8601</a>
+, <a class="el" href="#ac71919acebe7566085aa7e053379adfea9d04214c0a4f148132f5d4b893ffbf11">UnixSeconds</a>
+, <a class="el" href="#ac71919acebe7566085aa7e053379adfea84528c85efca74abc999e5cecbed86e8">UnixMilliseconds</a>
+ }</td></tr>
+<tr class="memdesc:ac71919acebe7566085aa7e053379adfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the wire format accepted for a time point.  <a href="#ac71919acebe7566085aa7e053379adfe">More...</a><br /></td></tr>
+<tr class="memitem:af1509afb4bcd411cf0b87a0e4e4c1039" id="r_af1509afb4bcd411cf0b87a0e4e4c1039"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039">IntegerFormat</a> { <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039ad207b4e0bce42a8f1555ce3a05e287f6">Dec</a>
+, <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039a92640bd72988395b326c888614f8937a">Hex</a>
+, <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039a807dbe7d1c25a633894d4a231b1c76d3">Bin</a>
+, <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039a29bf7a323f1088692c1ad29f08f4f573">Si</a>
+ }</td></tr>
+<tr class="memdesc:af1509afb4bcd411cf0b87a0e4e4c1039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the accepted syntax for integral command line values.  <a href="#af1509afb4bcd411cf0b87a0e4e4c1039">More...</a><br /></td></tr>
+<tr class="memitem:a6c45e8d392780d462eecf93808891c75" id="r_a6c45e8d392780d462eecf93808891c75"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a6c45e8d392780d462eecf93808891c75">FloatFormat</a> { <a class="el" href="#a6c45e8d392780d462eecf93808891c75a4457d440870ad6d42bab9082d9bf9b61">Fixed</a>
+, <a class="el" href="#a6c45e8d392780d462eecf93808891c75a29bf7a323f1088692c1ad29f08f4f573">Si</a>
+ }</td></tr>
+<tr class="memdesc:a6c45e8d392780d462eecf93808891c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the accepted syntax for floating-point command line values.  <a href="#a6c45e8d392780d462eecf93808891c75">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2e45c8f708712ebf18fc749868b39017" id="r_a2e45c8f708712ebf18fc749868b39017"><td class="memTemplParams" colspan="2">template&lt;auto Mem&gt; </td></tr>
+<tr class="memitem:a2e45c8f708712ebf18fc749868b39017 template"><td class="memItemLeft">consteval <a class="el" href="struct_ogma_1_1_arg.html">Arg</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2e45c8f708712ebf18fc749868b39017">GetArg</a> ()</td></tr>
+<tr class="memdesc:a2e45c8f708712ebf18fc749868b39017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts <code class="param">Mem's</code> <a class="el" href="struct_ogma_1_1_arg.html" title="Arg">Arg</a> annotation value. Behaviour is undefined if <code class="param">Mem</code> is not annotated with <a class="el" href="struct_ogma_1_1_arg.html" title="Arg">Arg</a>.  <br /></td></tr>
+<tr class="memitem:af1c2a319da709c5cbb3b6b6430b2623a" id="r_af1c2a319da709c5cbb3b6b6430b2623a"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:af1c2a319da709c5cbb3b6b6430b2623a template"><td class="memItemLeft">consteval bool&#160;</td><td class="memItemRight"><a class="el" href="#af1c2a319da709c5cbb3b6b6430b2623a">HasAppInfo</a> ()</td></tr>
+<tr class="memdesc:af1c2a319da709c5cbb3b6b6430b2623a"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <code class="param">T</code> (the root config struct) carries an <a class="el" href="struct_ogma_1_1_app_info.html" title="AppInfo">AppInfo</a> annotation.  <br /></td></tr>
+<tr class="memitem:a66cd245d6e92b079d06ff706ffc308db" id="r_a66cd245d6e92b079d06ff706ffc308db"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a66cd245d6e92b079d06ff706ffc308db template"><td class="memItemLeft">consteval std::string_view&#160;</td><td class="memItemRight"><a class="el" href="#a66cd245d6e92b079d06ff706ffc308db">ScopePathOf</a> ()</td></tr>
+<tr class="memdesc:a66cd245d6e92b079d06ff706ffc308db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a scope path from a Type. If T has <a class="el" href="struct_ogma_1_1_app_info.html" title="AppInfo">AppInfo</a>, the scope is the app name, otherwise is the T identifier.  <br /></td></tr>
+<tr class="memitem:a17d3b186913191d68d2a5fa210dc22a6" id="r_a17d3b186913191d68d2a5fa210dc22a6"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a17d3b186913191d68d2a5fa210dc22a6 template"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a17d3b186913191d68d2a5fa210dc22a6">RenderVersion</a> ()</td></tr>
+<tr class="memdesc:a17d3b186913191d68d2a5fa210dc22a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats and returns the version.  <br /></td></tr>
+<tr class="memitem:a0a47616808f80a0af45e252192cc5c64" id="r_a0a47616808f80a0af45e252192cc5c64"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a0a47616808f80a0af45e252192cc5c64 template"><td class="memItemLeft"><a class="el" href="#a9d769eeb125646755ee34f72b19f8525">Result</a>&lt; T &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0a47616808f80a0af45e252192cc5c64">Parse</a> (<a class="el" href="#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a> args)</td></tr>
+<tr class="memdesc:a0a47616808f80a0af45e252192cc5c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses all <a class="el" href="struct_ogma_1_1_arg.html" title="Arg">Arg</a> and <a class="el" href="struct_ogma_1_1_variant_arg.html" title="VariantArg">VariantArg</a> annotated members of <code class="param">T</code>.  <br /></td></tr>
+<tr class="memitem:aaa41ebc4be44730e00b50526dbf91e6a" id="r_aaa41ebc4be44730e00b50526dbf91e6a"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:aaa41ebc4be44730e00b50526dbf91e6a template"><td class="memItemLeft">std::expected&lt; int, std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aaa41ebc4be44730e00b50526dbf91e6a">Execute</a> (const T &amp;config)</td></tr>
+<tr class="memdesc:aaa41ebc4be44730e00b50526dbf91e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a parsed configuration object.  <br /></td></tr>
+<tr class="memitem:a6480646d5a5dff97527a7cd422b1a818" id="r_a6480646d5a5dff97527a7cd422b1a818"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a6480646d5a5dff97527a7cd422b1a818 template"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6480646d5a5dff97527a7cd422b1a818">ParseAndExecute</a> (<a class="el" href="#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a> args)</td></tr>
+<tr class="memdesc:a6480646d5a5dff97527a7cd422b1a818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses <code class="param">args</code> into <code class="param">T</code> and immediately executes the result.  <br /></td></tr>
+<tr class="memitem:a203652db1e79e32a0bba175be3315f4e" id="r_a203652db1e79e32a0bba175be3315f4e"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a203652db1e79e32a0bba175be3315f4e template"><td class="memItemLeft">consteval bool&#160;</td><td class="memItemRight"><a class="el" href="#a203652db1e79e32a0bba175be3315f4e">IsPositional</a> (const std::span&lt; std::meta::info const &gt; annots)</td></tr>
+<tr class="memitem:ab01605a2a800fb3411c7f70f101c1708" id="r_ab01605a2a800fb3411c7f70f101c1708"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:ab01605a2a800fb3411c7f70f101c1708 template"><td class="memItemLeft">consteval bool&#160;</td><td class="memItemRight"><a class="el" href="#ab01605a2a800fb3411c7f70f101c1708">IsNamedOnly</a> (const std::span&lt; std::meta::info const &gt; annots)</td></tr>
+<tr class="memitem:aafd5eb60e4cad5ce73844b9c36f11285" id="r_aafd5eb60e4cad5ce73844b9c36f11285"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:aafd5eb60e4cad5ce73844b9c36f11285 template"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aafd5eb60e4cad5ce73844b9c36f11285">RenderHelpPage</a> (std::string_view scopePath={})</td></tr>
+<tr class="memdesc:aafd5eb60e4cad5ce73844b9c36f11285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats and returns the help page.  <br /></td></tr>
+<tr class="memitem:a76f12b5e2d01989b78841b789815a3b7" id="r_a76f12b5e2d01989b78841b789815a3b7"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a76f12b5e2d01989b78841b789815a3b7 template"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a76f12b5e2d01989b78841b789815a3b7">HelpText</a> (std::string_view scopePath={})</td></tr>
+<tr class="memdesc:a76f12b5e2d01989b78841b789815a3b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the help page of <code class="param">T's</code> scope.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a933e9291b379fb8b16625e6f062e386e" id="r_a933e9291b379fb8b16625e6f062e386e"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_bool_arg.html">BoolArg</a>&#160;</td><td class="memItemRight"><a class="el" href="#a933e9291b379fb8b16625e6f062e386e">boolArg</a> {}</td></tr>
+<tr class="memdesc:a933e9291b379fb8b16625e6f062e386e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The annotation value used to mark a boolean argument.  <br /></td></tr>
+<tr class="memitem:a65ac0ba7badec86cb0a16dc9173639de" id="r_a65ac0ba7badec86cb0a16dc9173639de"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_overwrite.html">Overwrite</a>&#160;</td><td class="memItemRight"><a class="el" href="#a65ac0ba7badec86cb0a16dc9173639de">overwrite</a> {}</td></tr>
+<tr class="memdesc:a65ac0ba7badec86cb0a16dc9173639de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The annotation value used to enable overwrite semantics.  <br /></td></tr>
+<tr class="memitem:ac4ab0bdf34141ced995126bd80887982" id="r_ac4ab0bdf34141ced995126bd80887982"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_append.html">Append</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac4ab0bdf34141ced995126bd80887982">append</a> {}</td></tr>
+<tr class="memdesc:ac4ab0bdf34141ced995126bd80887982"><td class="mdescLeft">&#160;</td><td class="mdescRight">The annotation value used to enable append semantics.  <br /></td></tr>
+<tr class="memitem:ac698cc963b3c967103f20d8525ff065e" id="r_ac698cc963b3c967103f20d8525ff065e"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_case_insensitive.html">CaseInsensitive</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac698cc963b3c967103f20d8525ff065e">caseInsensitive</a> {}</td></tr>
+<tr class="memdesc:ac698cc963b3c967103f20d8525ff065e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The annotation value used to enable case insensitive enum parsing.  <br /></td></tr>
+<tr class="memitem:a2431a21c1249b919233f16e71f43b3e4" id="r_a2431a21c1249b919233f16e71f43b3e4"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_duration_fmt.html">DurationFmt</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2431a21c1249b919233f16e71f43b3e4">durationFmt</a> {}</td></tr>
+<tr class="memdesc:a2431a21c1249b919233f16e71f43b3e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The annotation value used to enable human readable durations.  <br /></td></tr>
+<tr class="memitem:a44942ab40ce7513f5f5ed2e65eb52b18" id="r_a44942ab40ce7513f5f5ed2e65eb52b18"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_time_point_fmt.html">TimePointFmt</a>&#160;</td><td class="memItemRight"><a class="el" href="#a44942ab40ce7513f5f5ed2e65eb52b18">iso8601</a> {}</td></tr>
+<tr class="memdesc:a44942ab40ce7513f5f5ed2e65eb52b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses ISO 8601 time points.  <br /></td></tr>
+<tr class="memitem:aea21d9df177ae880f623aec1f012f0ec" id="r_aea21d9df177ae880f623aec1f012f0ec"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_time_point_fmt.html">TimePointFmt</a>&#160;</td><td class="memItemRight"><a class="el" href="#aea21d9df177ae880f623aec1f012f0ec">unixSeconds</a> { <a class="el" href="#ac71919acebe7566085aa7e053379adfea9d04214c0a4f148132f5d4b893ffbf11">TimePointFormat::UnixSeconds</a> }</td></tr>
+<tr class="memdesc:aea21d9df177ae880f623aec1f012f0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses Unix timestamps measured in seconds.  <br /></td></tr>
+<tr class="memitem:a990cf3020a36ea0deec8a102f9c31d23" id="r_a990cf3020a36ea0deec8a102f9c31d23"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_time_point_fmt.html">TimePointFmt</a>&#160;</td><td class="memItemRight"><a class="el" href="#a990cf3020a36ea0deec8a102f9c31d23">unixMilliseconds</a> { <a class="el" href="#ac71919acebe7566085aa7e053379adfea84528c85efca74abc999e5cecbed86e8">TimePointFormat::UnixMilliseconds</a> }</td></tr>
+<tr class="memdesc:a990cf3020a36ea0deec8a102f9c31d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses Unix timestamps measured in milliseconds.  <br /></td></tr>
+<tr class="memitem:acc5f418626d62ac699e0efb7fb171d1c" id="r_acc5f418626d62ac699e0efb7fb171d1c"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_file_only.html">FileOnly</a>&#160;</td><td class="memItemRight"><a class="el" href="#acc5f418626d62ac699e0efb7fb171d1c">fileOnly</a> {}</td></tr>
+<tr class="memdesc:acc5f418626d62ac699e0efb7fb171d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The annotation value used to enable regular file validation.  <br /></td></tr>
+<tr class="memitem:aa2131cd42794dcf525fd8701528c8207" id="r_aa2131cd42794dcf525fd8701528c8207"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_dir_only.html">DirOnly</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa2131cd42794dcf525fd8701528c8207">dirOnly</a> {}</td></tr>
+<tr class="memdesc:aa2131cd42794dcf525fd8701528c8207"><td class="mdescLeft">&#160;</td><td class="mdescRight">The annotation value used to enable directory validation.  <br /></td></tr>
+<tr class="memitem:ae6f7fb23a46b5e77f9816108ed4641e8" id="r_ae6f7fb23a46b5e77f9816108ed4641e8"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_must_exist.html">MustExist</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae6f7fb23a46b5e77f9816108ed4641e8">mustExist</a> {}</td></tr>
+<tr class="memdesc:ae6f7fb23a46b5e77f9816108ed4641e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The annotation value used to enable existence validation.  <br /></td></tr>
+<tr class="memitem:a528744ff18f50f97f039b5bf45f78ecf" id="r_a528744ff18f50f97f039b5bf45f78ecf"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_integer_fmt.html">IntegerFmt</a>&#160;</td><td class="memItemRight"><a class="el" href="#a528744ff18f50f97f039b5bf45f78ecf">decNumber</a> { <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039ad207b4e0bce42a8f1555ce3a05e287f6">IntegerFormat::Dec</a> }</td></tr>
+<tr class="memdesc:a528744ff18f50f97f039b5bf45f78ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts decimal values.  <br /></td></tr>
+<tr class="memitem:aaa6ec6bf6825c11d9cce41a0b69517c5" id="r_aaa6ec6bf6825c11d9cce41a0b69517c5"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_integer_fmt.html">IntegerFmt</a>&#160;</td><td class="memItemRight"><a class="el" href="#aaa6ec6bf6825c11d9cce41a0b69517c5">hexNumber</a> { <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039a92640bd72988395b326c888614f8937a">IntegerFormat::Hex</a> }</td></tr>
+<tr class="memdesc:aaa6ec6bf6825c11d9cce41a0b69517c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts hexadecimal values with a 0x prefix.  <br /></td></tr>
+<tr class="memitem:a44bdfd5d33497f5c6bcd4ffe305217b1" id="r_a44bdfd5d33497f5c6bcd4ffe305217b1"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_integer_fmt.html">IntegerFmt</a>&#160;</td><td class="memItemRight"><a class="el" href="#a44bdfd5d33497f5c6bcd4ffe305217b1">binNumber</a> { <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039a807dbe7d1c25a633894d4a231b1c76d3">IntegerFormat::Bin</a> }</td></tr>
+<tr class="memdesc:a44bdfd5d33497f5c6bcd4ffe305217b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts binary values with a 0b prefix.  <br /></td></tr>
+<tr class="memitem:a3a39d4029455d060ef9d0fc68b5a5a90" id="r_a3a39d4029455d060ef9d0fc68b5a5a90"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_integer_fmt.html">IntegerFmt</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3a39d4029455d060ef9d0fc68b5a5a90">siNumber</a> { <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039a29bf7a323f1088692c1ad29f08f4f573">IntegerFormat::Si</a> }</td></tr>
+<tr class="memdesc:a3a39d4029455d060ef9d0fc68b5a5a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts SI suffixes such as k, M, G, T, P, E, Z, and Y.  <br /></td></tr>
+<tr class="memitem:a4480e6058129fca6aec0dd2fc61dc8f4" id="r_a4480e6058129fca6aec0dd2fc61dc8f4"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_float_fmt.html">FloatFmt</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4480e6058129fca6aec0dd2fc61dc8f4">fixedFloat</a> { <a class="el" href="#a6c45e8d392780d462eecf93808891c75a4457d440870ad6d42bab9082d9bf9b61">FloatFormat::Fixed</a> }</td></tr>
+<tr class="memdesc:a4480e6058129fca6aec0dd2fc61dc8f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts strict fixed-point values.  <br /></td></tr>
+<tr class="memitem:a875b582f7a1c9ca8276a0491e5f8692c" id="r_a875b582f7a1c9ca8276a0491e5f8692c"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_float_fmt.html">FloatFmt</a>&#160;</td><td class="memItemRight"><a class="el" href="#a875b582f7a1c9ca8276a0491e5f8692c">siFloat</a> { <a class="el" href="#a6c45e8d392780d462eecf93808891c75a29bf7a323f1088692c1ad29f08f4f573">FloatFormat::Si</a> }</td></tr>
+<tr class="memdesc:a875b582f7a1c9ca8276a0491e5f8692c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts SI suffixes (k, M, G, etc).  <br /></td></tr>
+<tr class="memitem:aa9b14856801cc770fda3b1ca0450a39f" id="r_aa9b14856801cc770fda3b1ca0450a39f"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_allow_special_values.html">AllowSpecialValues</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa9b14856801cc770fda3b1ca0450a39f">allowSpecialValues</a> {}</td></tr>
+<tr class="memdesc:aa9b14856801cc770fda3b1ca0450a39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The annotation value used to enable NaN, +inf, and -inf.  <br /></td></tr>
+<tr class="memitem:a4fc5f16690d384b5f2cf7afcd799e28b" id="r_a4fc5f16690d384b5f2cf7afcd799e28b"><td class="memItemLeft">constexpr <a class="el" href="struct_ogma_1_1_f_range.html">FRange</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4fc5f16690d384b5f2cf7afcd799e28b">ratio</a> { 0, 1 }</td></tr>
+<tr class="memdesc:a4fc5f16690d384b5f2cf7afcd799e28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constrains an argument to the interval [0, 1].  <br /></td></tr>
+<tr class="memitem:a112525f03f4f8df1f85558b18b0efc58" id="r_a112525f03f4f8df1f85558b18b0efc58"><td class="memItemLeft">constexpr std::string_view&#160;</td><td class="memItemRight"><a class="el" href="#a112525f03f4f8df1f85558b18b0efc58">controlToken</a> { &quot;--&quot; }</td></tr>
+<tr class="memdesc:a112525f03f4f8df1f85558b18b0efc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">The double-hyphen token from POSIX, repurposed as a general control token.  <br /></td></tr>
+<tr class="memitem:aad1b1ccb63c77e09728856a980ce9730" id="r_aad1b1ccb63c77e09728856a980ce9730"><td class="memItemLeft">constexpr std::string_view&#160;</td><td class="memItemRight"><a class="el" href="#aad1b1ccb63c77e09728856a980ce9730">closingToken</a> { &quot;-&quot; }</td></tr>
+<tr class="memdesc:aad1b1ccb63c77e09728856a980ce9730"><td class="mdescLeft">&#160;</td><td class="mdescRight">The single-hyphen token that closes the current scope.  <br /></td></tr>
+</table>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a id="ac53fc9e840f3c4283d26fb90ab70eb60" name="ac53fc9e840f3c4283d26fb90ab70eb60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac53fc9e840f3c4283d26fb90ab70eb60">&#9670;&#160;</a></span>ArgList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ac53fc9e840f3c4283d26fb90ab70eb60">Ogma::ArgList</a> = std::vector&lt;std::string_view&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4304085ebb1a4108247cc9350eaddb4" name="aa4304085ebb1a4108247cc9350eaddb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4304085ebb1a4108247cc9350eaddb4">&#9670;&#160;</a></span>ArgSpan</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aa4304085ebb1a4108247cc9350eaddb4">Ogma::ArgSpan</a> = std::span&lt;const std::string_view&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d769eeb125646755ee34f72b19f8525" name="a9d769eeb125646755ee34f72b19f8525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d769eeb125646755ee34f72b19f8525">&#9670;&#160;</a></span>Result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a9d769eeb125646755ee34f72b19f8525">Ogma::Result</a> = std::expected&lt;std::pair&lt;T, <a class="el" href="#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a>&gt;, std::string&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c338596a96a08ec87ad8e5ee8adeac3" name="a8c338596a96a08ec87ad8e5ee8adeac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c338596a96a08ec87ad8e5ee8adeac3">&#9670;&#160;</a></span>TypeOf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;auto Info&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a8c338596a96a08ec87ad8e5ee8adeac3">Ogma::TypeOf</a> = typename [: std::meta::type_of(Info) :]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
+<a id="a6c45e8d392780d462eecf93808891c75" name="a6c45e8d392780d462eecf93808891c75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c45e8d392780d462eecf93808891c75">&#9670;&#160;</a></span>FloatFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a6c45e8d392780d462eecf93808891c75">Ogma::FloatFormat</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6c45e8d392780d462eecf93808891c75a4457d440870ad6d42bab9082d9bf9b61" name="a6c45e8d392780d462eecf93808891c75a4457d440870ad6d42bab9082d9bf9b61"></a>Fixed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6c45e8d392780d462eecf93808891c75a29bf7a323f1088692c1ad29f08f4f573" name="a6c45e8d392780d462eecf93808891c75a29bf7a323f1088692c1ad29f08f4f573"></a>Si&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="af1509afb4bcd411cf0b87a0e4e4c1039" name="af1509afb4bcd411cf0b87a0e4e4c1039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1509afb4bcd411cf0b87a0e4e4c1039">&#9670;&#160;</a></span>IntegerFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039">Ogma::IntegerFormat</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af1509afb4bcd411cf0b87a0e4e4c1039ad207b4e0bce42a8f1555ce3a05e287f6" name="af1509afb4bcd411cf0b87a0e4e4c1039ad207b4e0bce42a8f1555ce3a05e287f6"></a>Dec&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af1509afb4bcd411cf0b87a0e4e4c1039a92640bd72988395b326c888614f8937a" name="af1509afb4bcd411cf0b87a0e4e4c1039a92640bd72988395b326c888614f8937a"></a>Hex&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af1509afb4bcd411cf0b87a0e4e4c1039a807dbe7d1c25a633894d4a231b1c76d3" name="af1509afb4bcd411cf0b87a0e4e4c1039a807dbe7d1c25a633894d4a231b1c76d3"></a>Bin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af1509afb4bcd411cf0b87a0e4e4c1039a29bf7a323f1088692c1ad29f08f4f573" name="af1509afb4bcd411cf0b87a0e4e4c1039a29bf7a323f1088692c1ad29f08f4f573"></a>Si&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac71919acebe7566085aa7e053379adfe" name="ac71919acebe7566085aa7e053379adfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71919acebe7566085aa7e053379adfe">&#9670;&#160;</a></span>TimePointFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ac71919acebe7566085aa7e053379adfe">Ogma::TimePointFormat</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac71919acebe7566085aa7e053379adfeaa453cda7db268357e599950dbd7b1dd5" name="ac71919acebe7566085aa7e053379adfeaa453cda7db268357e599950dbd7b1dd5"></a>Iso8601&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac71919acebe7566085aa7e053379adfea9d04214c0a4f148132f5d4b893ffbf11" name="ac71919acebe7566085aa7e053379adfea9d04214c0a4f148132f5d4b893ffbf11"></a>UnixSeconds&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac71919acebe7566085aa7e053379adfea84528c85efca74abc999e5cecbed86e8" name="ac71919acebe7566085aa7e053379adfea84528c85efca74abc999e5cecbed86e8"></a>UnixMilliseconds&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="aaa41ebc4be44730e00b50526dbf91e6a" name="aaa41ebc4be44730e00b50526dbf91e6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa41ebc4be44730e00b50526dbf91e6a">&#9670;&#160;</a></span>Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::expected&lt; int, std::string &gt; Ogma::Execute </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A callable configuration is invoked directly. A variant configuration is visited recursively until a callable branch is reached. A plain struct without an operator() and without any variant member has nothing to run and returns 0. </p>
+
+</div>
+</div>
+<a id="a2e45c8f708712ebf18fc749868b39017" name="a2e45c8f708712ebf18fc749868b39017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e45c8f708712ebf18fc749868b39017">&#9670;&#160;</a></span>GetArg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;auto Mem&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_arg.html">Arg</a> Ogma::GetArg </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1c2a319da709c5cbb3b6b6430b2623a" name="af1c2a319da709c5cbb3b6b6430b2623a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c2a319da709c5cbb3b6b6430b2623a">&#9670;&#160;</a></span>HasAppInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ogma::HasAppInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76f12b5e2d01989b78841b789815a3b7" name="a76f12b5e2d01989b78841b789815a3b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f12b5e2d01989b78841b789815a3b7">&#9670;&#160;</a></span>HelpText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ogma::HelpText </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>scopePath</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scopePath</td><td>how the scope is addressed in the usage line. Empty means the root.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Hidden members never appear. The usage line and options formatting are driven entirely by the <code><a class="el" href="struct_ogma_1_1_value_spec.html" title="Struct used to show the help information about a flag.">ValueSpec</a></code> returned by each member's <code><a class="el" href="struct_ogma_1_1_type_parser.html" title="Specialise this to teach Ogma how to parse T from command-line tokens. It&#39;s very similar to std::form...">TypeParser</a></code>.</p>
+<p>The page anatomy and the usage grammar are documented in <a class="el" href="help-page.html" title="Help">Help</a>, and the extension point that feeds it in <a class="el" href="type-parser.html" title="TypeParser structure">TypeParser structure</a>. </p>
+
+</div>
+</div>
+<a id="ab01605a2a800fb3411c7f70f101c1708" name="ab01605a2a800fb3411c7f70f101c1708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab01605a2a800fb3411c7f70f101c1708">&#9670;&#160;</a></span>IsNamedOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ogma::IsNamedOnly </td>
+          <td>(</td>
+          <td class="paramtype">const std::span&lt; std::meta::info const &gt;</td>          <td class="paramname"><span class="paramname"><em>annots</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a203652db1e79e32a0bba175be3315f4e" name="a203652db1e79e32a0bba175be3315f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a203652db1e79e32a0bba175be3315f4e">&#9670;&#160;</a></span>IsPositional()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ogma::IsPositional </td>
+          <td>(</td>
+          <td class="paramtype">const std::span&lt; std::meta::info const &gt;</td>          <td class="paramname"><span class="paramname"><em>annots</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a47616808f80a0af45e252192cc5c64" name="a0a47616808f80a0af45e252192cc5c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a47616808f80a0af45e252192cc5c64">&#9670;&#160;</a></span>Parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a9d769eeb125646755ee34f72b19f8525">Result</a>&lt; T &gt; Ogma::Parse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a></td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Named options are matched by flag spelling. Every member's own <code><a class="el" href="struct_ogma_1_1_type_parser.html#a23a26417eb4e9c2308da83b0c42b1ee9" title="Primary fallback flags.">TypeParser::ExpectedFlags</a></code> (minus the positional <code>""</code> entry) feeds a constexpr flag table, and a "--"-shaped token is looked up there. Members that accept a positional invocation are parsed in declaration order, a bare token fills the first still-unfilled positional entry, and a <a class="el" href="struct_ogma_1_1_variant_arg.html" title="VariantArg">VariantArg</a> member matches the subcommand names declared in its <code>cases</code>. Both paths go through the same per-member setter, so repeated named occurrences keep accumulating (or overwriting) exactly as each member's own parser decides, and a member reached positionally cannot be claimed twice.</p>
+<p>A plain <code><a class="el" href="struct_ogma_1_1_arg.html" title="The pivot annotation from this library. Describes a named argument.">Arg</a></code> annotated member whose own type is itself an unspecialized struct with Arg/VariantArg members recurses automatically. There is no separate dispatch for it, it simply reaches <code><a class="el" href="struct_ogma_1_1_type_parser.html#a87250c20ce6955ddfb185e22b15c78de" title="Primary fallback to parse values.">TypeParser&lt;FieldT&gt;::Parse</a></code> like any other member, and that type's primary (unspecialized) fallback IS the same struct-walking engine used at every level, root or nested alike. Such a member is entered through one of its own ExpectedFlags spellings (or, when its type is positional-capable, directly by a bare token), after which its own flags and positional members are recognised in place. An explicit closing token (<a class="el" href="#aad1b1ccb63c77e09728856a980ce9730" title="Ogma::closingToken">Ogma::closingToken</a>) ends that nested member's own token stream and hands the remainder back to its caller.</p>
+<p>Any input left over once <code class="param">T</code> is fully parsed, including a stray, unconsumed closing token, is reported as an error.</p>
+<p>A "--help" token is intercepted by the scope that sees it (and "--version" too, when the root declares <a class="el" href="struct_ogma_1_1_app_info.html" title="AppInfo">AppInfo</a>), which aborts parsing by throwing <a class="el" href="struct_ogma_1_1_help_requested.html" title="HelpRequested">HelpRequested</a> carrying the rendered page. Catch it if you drive <code>Parse</code> directly, or use <a class="el" href="#a6480646d5a5dff97527a7cd422b1a818" title="ParseAndExecute">ParseAndExecute</a> which already handles it.</p>
+<p>The token-level rules (positional queue, named table, subcommand dispatch) are documented in <a class="el" href="positional-vs-named.html" title="Positional vs Named Arguments">Positional vs Named Arguments</a>, and the nesting rules in <a class="el" href="scopes.html" title="Scopes">Scopes</a>. </p>
+
+</div>
+</div>
+<a id="a6480646d5a5dff97527a7cd422b1a818" name="a6480646d5a5dff97527a7cd422b1a818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6480646d5a5dff97527a7cd422b1a818">&#9670;&#160;</a></span>ParseAndExecute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ogma::ParseAndExecute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a></td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Errors are printed to standard error and produce <code>EXIT_FAILURE</code>. A "--help" or "--version" request prints its page to standard output and counts as success, which is why the empty-error path returns EXIT_SUCCESS instead of failing. </p>
+
+</div>
+</div>
+<a id="aafd5eb60e4cad5ce73844b9c36f11285" name="aafd5eb60e4cad5ce73844b9c36f11285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd5eb60e4cad5ce73844b9c36f11285">&#9670;&#160;</a></span>RenderHelpPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ogma::RenderHelpPage </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>scopePath</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17d3b186913191d68d2a5fa210dc22a6" name="a17d3b186913191d68d2a5fa210dc22a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d3b186913191d68d2a5fa210dc22a6">&#9670;&#160;</a></span>RenderVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ogma::RenderVersion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66cd245d6e92b079d06ff706ffc308db" name="a66cd245d6e92b079d06ff706ffc308db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66cd245d6e92b079d06ff706ffc308db">&#9670;&#160;</a></span>ScopePathOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view Ogma::ScopePathOf </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="aa9b14856801cc770fda3b1ca0450a39f" name="aa9b14856801cc770fda3b1ca0450a39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b14856801cc770fda3b1ca0450a39f">&#9670;&#160;</a></span>allowSpecialValues</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_allow_special_values.html">AllowSpecialValues</a> Ogma::allowSpecialValues {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4ab0bdf34141ced995126bd80887982" name="ac4ab0bdf34141ced995126bd80887982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ab0bdf34141ced995126bd80887982">&#9670;&#160;</a></span>append</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_append.html">Append</a> Ogma::append {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44bdfd5d33497f5c6bcd4ffe305217b1" name="a44bdfd5d33497f5c6bcd4ffe305217b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44bdfd5d33497f5c6bcd4ffe305217b1">&#9670;&#160;</a></span>binNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_integer_fmt.html">IntegerFmt</a> Ogma::binNumber { <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039a807dbe7d1c25a633894d4a231b1c76d3">IntegerFormat::Bin</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a933e9291b379fb8b16625e6f062e386e" name="a933e9291b379fb8b16625e6f062e386e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933e9291b379fb8b16625e6f062e386e">&#9670;&#160;</a></span>boolArg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_bool_arg.html">BoolArg</a> Ogma::boolArg {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac698cc963b3c967103f20d8525ff065e" name="ac698cc963b3c967103f20d8525ff065e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac698cc963b3c967103f20d8525ff065e">&#9670;&#160;</a></span>caseInsensitive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_case_insensitive.html">CaseInsensitive</a> Ogma::caseInsensitive {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad1b1ccb63c77e09728856a980ce9730" name="aad1b1ccb63c77e09728856a980ce9730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1b1ccb63c77e09728856a980ce9730">&#9670;&#160;</a></span>closingToken</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view Ogma::closingToken { &quot;-&quot; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The scope-based counterpart of the POSIX end-of-options delimiter: instead of ending option parsing globally, it exits exactly one level of nesting — a container, a nested structural member or an opened subcommand — and hands the remaining arguments back to the parent scope. It is optional whenever the argument list ends there anyway, and a trailing one at the root is harmless. </p>
+
+</div>
+</div>
+<a id="a112525f03f4f8df1f85558b18b0efc58" name="a112525f03f4f8df1f85558b18b0efc58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112525f03f4f8df1f85558b18b0efc58">&#9670;&#160;</a></span>controlToken</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view Ogma::controlToken { &quot;--&quot; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>In POSIX it terminates option parsing; here it "opts out" of the next token being read as a flag instead — a value that merely looks like one. In containers it opens a new element of named-only values; in positional strings it lets a value carry flag-shaped content, as in <code>"-- &amp;ndash;base64=idk"</code> . It is not an end-of-options delimiter: parsing of the surrounding scope continues normally after it. </p>
+
+</div>
+</div>
+<a id="a528744ff18f50f97f039b5bf45f78ecf" name="a528744ff18f50f97f039b5bf45f78ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528744ff18f50f97f039b5bf45f78ecf">&#9670;&#160;</a></span>decNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_integer_fmt.html">IntegerFmt</a> Ogma::decNumber { <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039ad207b4e0bce42a8f1555ce3a05e287f6">IntegerFormat::Dec</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2131cd42794dcf525fd8701528c8207" name="aa2131cd42794dcf525fd8701528c8207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2131cd42794dcf525fd8701528c8207">&#9670;&#160;</a></span>dirOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_dir_only.html">DirOnly</a> Ogma::dirOnly {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2431a21c1249b919233f16e71f43b3e4" name="a2431a21c1249b919233f16e71f43b3e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2431a21c1249b919233f16e71f43b3e4">&#9670;&#160;</a></span>durationFmt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_duration_fmt.html">DurationFmt</a> Ogma::durationFmt {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc5f418626d62ac699e0efb7fb171d1c" name="acc5f418626d62ac699e0efb7fb171d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5f418626d62ac699e0efb7fb171d1c">&#9670;&#160;</a></span>fileOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_file_only.html">FileOnly</a> Ogma::fileOnly {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4480e6058129fca6aec0dd2fc61dc8f4" name="a4480e6058129fca6aec0dd2fc61dc8f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4480e6058129fca6aec0dd2fc61dc8f4">&#9670;&#160;</a></span>fixedFloat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_float_fmt.html">FloatFmt</a> Ogma::fixedFloat { <a class="el" href="#a6c45e8d392780d462eecf93808891c75a4457d440870ad6d42bab9082d9bf9b61">FloatFormat::Fixed</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa6ec6bf6825c11d9cce41a0b69517c5" name="aaa6ec6bf6825c11d9cce41a0b69517c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6ec6bf6825c11d9cce41a0b69517c5">&#9670;&#160;</a></span>hexNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_integer_fmt.html">IntegerFmt</a> Ogma::hexNumber { <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039a92640bd72988395b326c888614f8937a">IntegerFormat::Hex</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44942ab40ce7513f5f5ed2e65eb52b18" name="a44942ab40ce7513f5f5ed2e65eb52b18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44942ab40ce7513f5f5ed2e65eb52b18">&#9670;&#160;</a></span>iso8601</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_time_point_fmt.html">TimePointFmt</a> Ogma::iso8601 {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6f7fb23a46b5e77f9816108ed4641e8" name="ae6f7fb23a46b5e77f9816108ed4641e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f7fb23a46b5e77f9816108ed4641e8">&#9670;&#160;</a></span>mustExist</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_must_exist.html">MustExist</a> Ogma::mustExist {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65ac0ba7badec86cb0a16dc9173639de" name="a65ac0ba7badec86cb0a16dc9173639de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65ac0ba7badec86cb0a16dc9173639de">&#9670;&#160;</a></span>overwrite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_overwrite.html">Overwrite</a> Ogma::overwrite {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fc5f16690d384b5f2cf7afcd799e28b" name="a4fc5f16690d384b5f2cf7afcd799e28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc5f16690d384b5f2cf7afcd799e28b">&#9670;&#160;</a></span>ratio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_f_range.html">FRange</a> Ogma::ratio { 0, 1 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a875b582f7a1c9ca8276a0491e5f8692c" name="a875b582f7a1c9ca8276a0491e5f8692c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875b582f7a1c9ca8276a0491e5f8692c">&#9670;&#160;</a></span>siFloat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_float_fmt.html">FloatFmt</a> Ogma::siFloat { <a class="el" href="#a6c45e8d392780d462eecf93808891c75a29bf7a323f1088692c1ad29f08f4f573">FloatFormat::Si</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a39d4029455d060ef9d0fc68b5a5a90" name="a3a39d4029455d060ef9d0fc68b5a5a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a39d4029455d060ef9d0fc68b5a5a90">&#9670;&#160;</a></span>siNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_integer_fmt.html">IntegerFmt</a> Ogma::siNumber { <a class="el" href="#af1509afb4bcd411cf0b87a0e4e4c1039a29bf7a323f1088692c1ad29f08f4f573">IntegerFormat::Si</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a990cf3020a36ea0deec8a102f9c31d23" name="a990cf3020a36ea0deec8a102f9c31d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990cf3020a36ea0deec8a102f9c31d23">&#9670;&#160;</a></span>unixMilliseconds</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_time_point_fmt.html">TimePointFmt</a> Ogma::unixMilliseconds { <a class="el" href="#ac71919acebe7566085aa7e053379adfea84528c85efca74abc999e5cecbed86e8">TimePointFormat::UnixMilliseconds</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea21d9df177ae880f623aec1f012f0ec" name="aea21d9df177ae880f623aec1f012f0ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea21d9df177ae880f623aec1f012f0ec">&#9670;&#160;</a></span>unixSeconds</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ogma_1_1_time_point_fmt.html">TimePointFmt</a> Ogma::unixSeconds { <a class="el" href="#ac71919acebe7566085aa7e053379adfea9d04214c0a4f148132f5d4b893ffbf11">TimePointFormat::UnixSeconds</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_ogma.html">Ogma</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

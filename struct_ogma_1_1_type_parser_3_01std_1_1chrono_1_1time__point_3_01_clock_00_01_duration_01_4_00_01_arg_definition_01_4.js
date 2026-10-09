@@ -1,0 +1,4 @@
+var struct_ogma_1_1_type_parser_3_01std_1_1chrono_1_1time__point_3_01_clock_00_01_duration_01_4_00_01_arg_definition_01_4 =
+[
+    [ "TimePoint", "struct_ogma_1_1_type_parser_3_01std_1_1chrono_1_1time__point_3_01_clock_00_01_duration_01_4_00_01_arg_definition_01_4.html#aeb1b1ab176118f78205e0b0d61ae37c0", null ]
+];

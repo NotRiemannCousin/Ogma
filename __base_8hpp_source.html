@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Ogma" />
+<meta property="og:image" content="https://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta property="og:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="hhttps://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta name="twitter:title" content="Ogma" />
+<meta name="twitter:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<!-- END twitter metadata -->
+<title>Ogma: include/Ogma/_base.hpp Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="theme-round.css" rel="stylesheet" type="text/css"/>
+<link href="theme-robot.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-msc.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/NotRiemannCousin/Ogma" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Ogma-logo.webp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Ogma
+   </div>
+   <div id="projectbrief">My Project Description</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+<div id="theme-selection">
+ <label for="theme-select">Theme:</label>
+ <select id="theme-select">
+  <option value="theme-default">Default</option>
+  <option value="theme-round">Round</option>
+  <option value="theme-robot">Robot</option>
+ </select>
+</div>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('__base_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">_base.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="__base_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;<a class="code" href="_utils_8hpp.html">Ogma/Utils.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="namespace_ogma.html">    5</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ogma.html">Ogma</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma region Annotations</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma region Arg</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_arg.html">   18</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_ogma_1_1_arg.html">Arg</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_arg.html#ad31f975497f66a295797ad3e22d0b88c">   19</a></span>        <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_arg.html#ad31f975497f66a295797ad3e22d0b88c">longName</a>{};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_arg.html#a20e5f6c9a69833b5529e741a40a84e02">   20</a></span>        <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_arg.html#a20e5f6c9a69833b5529e741a40a84e02">description</a>{};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_arg.html#a8d94400aafb8dc35946c449094982938">   21</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_ogma_1_1_arg.html#a8d94400aafb8dc35946c449094982938">hidden</a>{ <span class="keyword">false</span> };</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    };</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">namespace </span>details_ { <span class="keyword">constexpr</span> <span class="keyword">auto</span> internalArg{ Arg{ <span class="stringliteral">&quot;_name_&quot;</span> } }; }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">template</span>&lt;auto Mem&gt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespace_ogma.html#a2e45c8f708712ebf18fc749868b39017">   29</a></span>    <span class="keyword">consteval</span> <a class="code hl_struct" href="struct_ogma_1_1_arg.html">Arg</a> <a class="code hl_function" href="namespace_ogma.html#a2e45c8f708712ebf18fc749868b39017">GetArg</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#pragma region Subcommand</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_variant_arg.html">   47</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_ogma_1_1_variant_arg.html">VariantArg</a> {</div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html">   48</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html">VariantBranch</a> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html#ae5e71a9162c6a5e9597cb4b9907e3e10">   49</a></span>            <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html#ae5e71a9162c6a5e9597cb4b9907e3e10">longName</a>{};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html#aa378d3754a6a10d959054077c6b4f610">   50</a></span>            <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html#aa378d3754a6a10d959054077c6b4f610">description</a>{};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        };</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_variant_arg.html#a56bba5426952d8cd8d556c3701d6ddb0">   53</a></span>        <span class="keyword">const</span> <a class="code hl_struct" href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html">VariantBranch</a>* <a class="code hl_variable" href="struct_ogma_1_1_variant_arg.html#a56bba5426952d8cd8d556c3701d6ddb0">cases</a>{};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_variant_arg.html#afac1532ac4d240e8ce2b9e2b26a2b3b9">   54</a></span>        std::size_t <a class="code hl_variable" href="struct_ogma_1_1_variant_arg.html#afac1532ac4d240e8ce2b9e2b26a2b3b9">caseCount</a>{};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    };</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_app_info.html">   62</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_ogma_1_1_app_info.html">AppInfo</a> {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_app_info.html#aba3ee087841a0bfa0caf4629bb98a1f7">   63</a></span>        <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_app_info.html#aba3ee087841a0bfa0caf4629bb98a1f7">name</a>{};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_app_info.html#a57528a535393167ca7017b0ab9b4d774">   64</a></span>        <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_app_info.html#a57528a535393167ca7017b0ab9b4d774">version</a>{};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_app_info.html#ac7d5823b0c1a6e9ac2aaea071d6e4d36">   65</a></span>        <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_app_info.html#ac7d5823b0c1a6e9ac2aaea071d6e4d36">description</a>{};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    };</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="namespace_ogma.html#af1c2a319da709c5cbb3b6b6430b2623a">   70</a></span>    <span class="keyword">consteval</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_ogma.html#af1c2a319da709c5cbb3b6b6430b2623a">HasAppInfo</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#pragma region Help</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="};">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_help_requested.html">   79</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_ogma_1_1_help_requested.html">HelpRequested</a> {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_help_requested.html#a82215ec70df86915d62e230cd024b9da">   80</a></span>        std::string <a class="code hl_variable" href="struct_ogma_1_1_help_requested.html#a82215ec70df86915d62e230cd024b9da">text</a>{};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    };</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="};">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_value_spec.html">   87</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_ogma_1_1_value_spec.html">ValueSpec</a> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_value_spec.html#ad0341962a1f2b2ea603b882e04ea59df">   89</a></span>        <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_value_spec.html#ad0341962a1f2b2ea603b882e04ea59df">usageFlag</a>{};</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_value_spec.html#aa9f890e76a478fc9de492697534ba213">   91</a></span>        <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_value_spec.html#aa9f890e76a478fc9de492697534ba213">flagList</a>{};</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_value_spec.html#a84bf0e69900ac06021a8fe848adf59b3">   93</a></span>        <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_value_spec.html#a84bf0e69900ac06021a8fe848adf59b3">metavars</a>{};</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_value_spec.html#aaf82337c2e43a65d4c017a265870ef2e">   95</a></span>        <a class="code hl_struct" href="struct_ogma_1_1_const_string.html">ConstString</a> <a class="code hl_variable" href="struct_ogma_1_1_value_spec.html#aaf82337c2e43a65d4c017a265870ef2e">modifiers</a>{};</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    };</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="namespace_ogma.html#a66cd245d6e92b079d06ff706ffc308db">  100</a></span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">consteval</span> std::string_view <a class="code hl_function" href="namespace_ogma.html#a66cd245d6e92b079d06ff706ffc308db">ScopePathOf</a>();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="namespace_ogma.html#a17d3b186913191d68d2a5fa210dc22a6">  103</a></span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; std::string <a class="code hl_function" href="namespace_ogma.html#a17d3b186913191d68d2a5fa210dc22a6">RenderVersion</a>();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#include &lt;Ogma/_base.tpp&gt;</span></div>
+<div class="ttc" id="a_utils_8hpp_html"><div class="ttname"><a href="_utils_8hpp.html">Utils.hpp</a></div><div class="ttdoc">Common types and reflection helpers used by Ogma.</div></div>
+<div class="ttc" id="anamespace_ogma_html"><div class="ttname"><a href="namespace_ogma.html">Ogma</a></div><div class="ttdef"><b>Definition</b> _base.hpp:5</div></div>
+<div class="ttc" id="anamespace_ogma_html_a17d3b186913191d68d2a5fa210dc22a6"><div class="ttname"><a href="namespace_ogma.html#a17d3b186913191d68d2a5fa210dc22a6">Ogma::RenderVersion</a></div><div class="ttdeci">std::string RenderVersion()</div><div class="ttdoc">Formats and returns the version.</div></div>
+<div class="ttc" id="anamespace_ogma_html_a2e45c8f708712ebf18fc749868b39017"><div class="ttname"><a href="namespace_ogma.html#a2e45c8f708712ebf18fc749868b39017">Ogma::GetArg</a></div><div class="ttdeci">consteval Arg GetArg()</div><div class="ttdoc">Extracts Mem&#39;s Arg annotation value. Behaviour is undefined if Mem is not annotated with Arg.</div></div>
+<div class="ttc" id="anamespace_ogma_html_a66cd245d6e92b079d06ff706ffc308db"><div class="ttname"><a href="namespace_ogma.html#a66cd245d6e92b079d06ff706ffc308db">Ogma::ScopePathOf</a></div><div class="ttdeci">consteval std::string_view ScopePathOf()</div><div class="ttdoc">Create a scope path from a Type. If T has AppInfo, the scope is the app name, otherwise is the T iden...</div></div>
+<div class="ttc" id="anamespace_ogma_html_af1c2a319da709c5cbb3b6b6430b2623a"><div class="ttname"><a href="namespace_ogma.html#af1c2a319da709c5cbb3b6b6430b2623a">Ogma::HasAppInfo</a></div><div class="ttdeci">consteval bool HasAppInfo()</div><div class="ttdoc">True when T (the root config struct) carries an AppInfo annotation.</div></div>
+<div class="ttc" id="astruct_ogma_1_1_app_info_html"><div class="ttname"><a href="struct_ogma_1_1_app_info.html">Ogma::AppInfo</a></div><div class="ttdoc">Metadata for the root application type.</div><div class="ttdef"><b>Definition</b> _base.hpp:62</div></div>
+<div class="ttc" id="astruct_ogma_1_1_app_info_html_a57528a535393167ca7017b0ab9b4d774"><div class="ttname"><a href="struct_ogma_1_1_app_info.html#a57528a535393167ca7017b0ab9b4d774">Ogma::AppInfo::version</a></div><div class="ttdeci">ConstString version</div><div class="ttdef"><b>Definition</b> _base.hpp:64</div></div>
+<div class="ttc" id="astruct_ogma_1_1_app_info_html_aba3ee087841a0bfa0caf4629bb98a1f7"><div class="ttname"><a href="struct_ogma_1_1_app_info.html#aba3ee087841a0bfa0caf4629bb98a1f7">Ogma::AppInfo::name</a></div><div class="ttdeci">ConstString name</div><div class="ttdef"><b>Definition</b> _base.hpp:63</div></div>
+<div class="ttc" id="astruct_ogma_1_1_app_info_html_ac7d5823b0c1a6e9ac2aaea071d6e4d36"><div class="ttname"><a href="struct_ogma_1_1_app_info.html#ac7d5823b0c1a6e9ac2aaea071d6e4d36">Ogma::AppInfo::description</a></div><div class="ttdeci">ConstString description</div><div class="ttdef"><b>Definition</b> _base.hpp:65</div></div>
+<div class="ttc" id="astruct_ogma_1_1_arg_html"><div class="ttname"><a href="struct_ogma_1_1_arg.html">Ogma::Arg</a></div><div class="ttdoc">The pivot annotation from this library. Describes a named argument.</div><div class="ttdef"><b>Definition</b> _base.hpp:18</div></div>
+<div class="ttc" id="astruct_ogma_1_1_arg_html_a20e5f6c9a69833b5529e741a40a84e02"><div class="ttname"><a href="struct_ogma_1_1_arg.html#a20e5f6c9a69833b5529e741a40a84e02">Ogma::Arg::description</a></div><div class="ttdeci">ConstString description</div><div class="ttdef"><b>Definition</b> _base.hpp:20</div></div>
+<div class="ttc" id="astruct_ogma_1_1_arg_html_a8d94400aafb8dc35946c449094982938"><div class="ttname"><a href="struct_ogma_1_1_arg.html#a8d94400aafb8dc35946c449094982938">Ogma::Arg::hidden</a></div><div class="ttdeci">bool hidden</div><div class="ttdef"><b>Definition</b> _base.hpp:21</div></div>
+<div class="ttc" id="astruct_ogma_1_1_arg_html_ad31f975497f66a295797ad3e22d0b88c"><div class="ttname"><a href="struct_ogma_1_1_arg.html#ad31f975497f66a295797ad3e22d0b88c">Ogma::Arg::longName</a></div><div class="ttdeci">ConstString longName</div><div class="ttdef"><b>Definition</b> _base.hpp:19</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html"><div class="ttname"><a href="struct_ogma_1_1_const_string.html">Ogma::ConstString</a></div><div class="ttdoc">A string with compile time static storage.</div><div class="ttdef"><b>Definition</b> Utils.hpp:31</div></div>
+<div class="ttc" id="astruct_ogma_1_1_help_requested_html"><div class="ttname"><a href="struct_ogma_1_1_help_requested.html">Ogma::HelpRequested</a></div><div class="ttdoc">Exception thrown by the struct-walking engine when a scope intercepts &quot;--help&quot; or &quot;--version&quot;....</div><div class="ttdef"><b>Definition</b> _base.hpp:79</div></div>
+<div class="ttc" id="astruct_ogma_1_1_help_requested_html_a82215ec70df86915d62e230cd024b9da"><div class="ttname"><a href="struct_ogma_1_1_help_requested.html#a82215ec70df86915d62e230cd024b9da">Ogma::HelpRequested::text</a></div><div class="ttdeci">std::string text</div><div class="ttdef"><b>Definition</b> _base.hpp:80</div></div>
+<div class="ttc" id="astruct_ogma_1_1_value_spec_html"><div class="ttname"><a href="struct_ogma_1_1_value_spec.html">Ogma::ValueSpec</a></div><div class="ttdoc">Struct used to show the help information about a flag.</div><div class="ttdef"><b>Definition</b> _base.hpp:87</div></div>
+<div class="ttc" id="astruct_ogma_1_1_value_spec_html_a84bf0e69900ac06021a8fe848adf59b3"><div class="ttname"><a href="struct_ogma_1_1_value_spec.html#a84bf0e69900ac06021a8fe848adf59b3">Ogma::ValueSpec::metavars</a></div><div class="ttdeci">ConstString metavars</div><div class="ttdoc">Used to show the semantic names that the user should expect. The &quot;&lt;NAME&gt;&quot; or &quot;&lt;COUNT&gt;&quot; thing.</div><div class="ttdef"><b>Definition</b> _base.hpp:93</div></div>
+<div class="ttc" id="astruct_ogma_1_1_value_spec_html_aa9f890e76a478fc9de492697534ba213"><div class="ttname"><a href="struct_ogma_1_1_value_spec.html#aa9f890e76a478fc9de492697534ba213">Ogma::ValueSpec::flagList</a></div><div class="ttdeci">ConstString flagList</div><div class="ttdoc">Used to show the flags that can be matched. Don&#39;t need to be a valid flag (like &quot;--[no-]flag-name&quot;).</div><div class="ttdef"><b>Definition</b> _base.hpp:91</div></div>
+<div class="ttc" id="astruct_ogma_1_1_value_spec_html_aaf82337c2e43a65d4c017a265870ef2e"><div class="ttname"><a href="struct_ogma_1_1_value_spec.html#aaf82337c2e43a65d4c017a265870ef2e">Ogma::ValueSpec::modifiers</a></div><div class="ttdeci">ConstString modifiers</div><div class="ttdoc">Used to show the info about the annotations to the user.</div><div class="ttdef"><b>Definition</b> _base.hpp:95</div></div>
+<div class="ttc" id="astruct_ogma_1_1_value_spec_html_ad0341962a1f2b2ea603b882e04ea59df"><div class="ttname"><a href="struct_ogma_1_1_value_spec.html#ad0341962a1f2b2ea603b882e04ea59df">Ogma::ValueSpec::usageFlag</a></div><div class="ttdeci">ConstString usageFlag</div><div class="ttdoc">Flag shown in usage.</div><div class="ttdef"><b>Definition</b> _base.hpp:89</div></div>
+<div class="ttc" id="astruct_ogma_1_1_variant_arg_1_1_variant_branch_html"><div class="ttname"><a href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html">Ogma::VariantArg::VariantBranch</a></div><div class="ttdef"><b>Definition</b> _base.hpp:48</div></div>
+<div class="ttc" id="astruct_ogma_1_1_variant_arg_1_1_variant_branch_html_aa378d3754a6a10d959054077c6b4f610"><div class="ttname"><a href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html#aa378d3754a6a10d959054077c6b4f610">Ogma::VariantArg::VariantBranch::description</a></div><div class="ttdeci">ConstString description</div><div class="ttdef"><b>Definition</b> _base.hpp:50</div></div>
+<div class="ttc" id="astruct_ogma_1_1_variant_arg_1_1_variant_branch_html_ae5e71a9162c6a5e9597cb4b9907e3e10"><div class="ttname"><a href="struct_ogma_1_1_variant_arg_1_1_variant_branch.html#ae5e71a9162c6a5e9597cb4b9907e3e10">Ogma::VariantArg::VariantBranch::longName</a></div><div class="ttdeci">ConstString longName</div><div class="ttdef"><b>Definition</b> _base.hpp:49</div></div>
+<div class="ttc" id="astruct_ogma_1_1_variant_arg_html"><div class="ttname"><a href="struct_ogma_1_1_variant_arg.html">Ogma::VariantArg</a></div><div class="ttdoc">Describes the branches of a variant-backed subcommand.</div><div class="ttdef"><b>Definition</b> _base.hpp:47</div></div>
+<div class="ttc" id="astruct_ogma_1_1_variant_arg_html_a56bba5426952d8cd8d556c3701d6ddb0"><div class="ttname"><a href="struct_ogma_1_1_variant_arg.html#a56bba5426952d8cd8d556c3701d6ddb0">Ogma::VariantArg::cases</a></div><div class="ttdeci">const VariantBranch * cases</div><div class="ttdef"><b>Definition</b> _base.hpp:53</div></div>
+<div class="ttc" id="astruct_ogma_1_1_variant_arg_html_afac1532ac4d240e8ce2b9e2b26a2b3b9"><div class="ttname"><a href="struct_ogma_1_1_variant_arg.html#afac1532ac4d240e8ce2b9e2b26a2b3b9">Ogma::VariantArg::caseCount</a></div><div class="ttdeci">std::size_t caseCount</div><div class="ttdef"><b>Definition</b> _base.hpp:54</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="dir_305296125a2aee3a7714331817d5eb6d.html">Ogma</a></li><li class="navelem"><a href="__base_8hpp.html">_base.hpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

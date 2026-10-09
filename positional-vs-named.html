@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Ogma" />
+<meta property="og:image" content="https://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta property="og:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="hhttps://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta name="twitter:title" content="Ogma" />
+<meta name="twitter:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<!-- END twitter metadata -->
+<title>Ogma: Positional vs Named Arguments</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="theme-round.css" rel="stylesheet" type="text/css"/>
+<link href="theme-robot.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-msc.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/NotRiemannCousin/Ogma" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Ogma-logo.webp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Ogma
+   </div>
+   <div id="projectbrief">My Project Description</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+<div id="theme-selection">
+ <label for="theme-select">Theme:</label>
+ <select id="theme-select">
+  <option value="theme-default">Default</option>
+  <option value="theme-round">Round</option>
+  <option value="theme-robot">Robot</option>
+ </select>
+</div>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('positional-vs-named.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Positional vs Named Arguments </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+Positional vs named</h1>
+<p>Every annotated member of an <a class="el" href="namespace_ogma.html">Ogma</a> struct answers exactly two questions. Can it be invoked without its flag, by a bare token? And is it required? The two answers are independent, and this page explains how they work, what the contract is, and the one deliberate asymmetry in it.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+The two protocol questions</h2>
+<p><b>Can it be invoked positionally?</b> This is decided by the member's own type, through its <span class="tt">TypeParser::ExpectedFlags</span>. If the returned flags contain the empty spelling <span class="tt">""</span>, the type is positional-capable, a bare token on the command line can fill it. If not, it is named-only, and you must type its flag.</p>
+<p>Strings, numbers, paths, enums, durations and containers are positional-capable. Nested structs, raw booleans and <span class="tt">std::optional</span> are named-only. You can check this at compile time with the <span class="tt">IsPositionalConcept</span> / <span class="tt">IsNamedOnlyConcept</span> concepts.</p>
+<p><b>Is it required?</b> This is decided exclusively by the wrapper <span class="tt">std::optional</span>. A member declared as <span class="tt">T</span> must be filled, either because a bare token reached it or because its flag was typed. A member declared as <span class="tt">std::optional&lt;T&gt;</span> may stay unset, and then it holds whatever it held before parsing (usually <span class="tt">std::nullopt</span>, which is how you detect "the flag was not given").</p>
+<p>Required does not mean "must be provided by position". A required positional member can perfectly be filled by its flag instead, and a member filled by flag leaves the positional queue.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+The contract, and why it is one-directional</h2>
+<p>Omittable implies named-only. An <span class="tt">std::optional</span> member can never compete for bare tokens, because the queue fills by position and there is no way to signal "skip this slot". The only way for an optional to stay unset is for its flag to never appear. <span class="tt">std::optional</span>'s own <span class="tt">ExpectedFlags</span> never contains <span class="tt">""</span>, so this holds by construction.</p>
+<p>The reverse does not hold. Named-only does not imply omittable. A nested struct is named-only but required, a container is positional-capable but required. This is the rule "nobody is special", with <span class="tt">std::optional</span> as the single sanctioned exception, being the only type that can be left unset.</p>
+<div class="fragment"><div class="line"><span class="keyword">struct </span>Options {</div>
+<div class="line">    [[ =<a class="code hl_struct" href="struct_ogma_1_1_arg.html">Ogma::Arg</a>{ <span class="stringliteral">&quot;query&quot;</span> } ]] std::string query{};             <span class="comment">// positional-capable, required</span></div>
+<div class="line">    [[ =Ogma::Arg{ <span class="stringliteral">&quot;config&quot;</span> } ]] Config config{};                <span class="comment">// named-only, required</span></div>
+<div class="line">    [[ =Ogma::Arg{ <span class="stringliteral">&quot;tag&quot;</span> } ]] std::optional&lt;std::string&gt; tag{};  <span class="comment">// named-only, omittable</span></div>
+<div class="line">};</div>
+<div class="ttc" id="astruct_ogma_1_1_arg_html"><div class="ttname"><a href="struct_ogma_1_1_arg.html">Ogma::Arg</a></div><div class="ttdoc">The pivot annotation from this library. Describes a named argument.</div><div class="ttdef"><b>Definition</b> _base.hpp:18</div></div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+How the positional queue works</h2>
+<p>Bare tokens fill the first still-unfilled positional member of the current scope, in declaration order. A member already filled by its flag is skipped, and a member that left the queue cannot be claimed again by a later bare token.</p>
+<p>Because the order is semantics, the subcommand member must be the last annotated member of its struct. Bare tokens would otherwise fill earlier positional members before the command was ever reachable, and a struct with a required positional declared before the variant would swallow the subcommand's own name. Members that must not compete for bare tokens go into <span class="tt">std::optional</span> (filled by name).</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+The named table</h2>
+<p>Flags are matched against a compile-time table built from every member's own <span class="tt">ExpectedFlags</span> (minus the empty spelling). The table is sorted and duplicate-free, and two members claiming the same spelling are a compile-time error. A raw bool contributes two spellings, <span class="tt">--name</span> and the synthetic <span class="tt">--no-name</span>, which is why a raw bool can never be positional, its spellings answer different values and a bare token could not tell them apart.</p>
+<p>Named occurrences repeat freely, which is how containers accumulate. Positional members are claimed exactly once.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+Escaping flag-shaped values</h2>
+<p>A positional string can receive a value that starts with <span class="tt">--</span> by escaping it with the control token.</p>
+<div class="fragment"><div class="line">--name -- --Green</div>
+</div><!-- fragment --><p>The same control token is what opens each new element of a container of named-only values. It is not an end-of-options delimiter, parsing of the surrounding scope continues normally after it.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+The help page reflects all of this</h2>
+<p>The usage line and the sections are a direct rendering of these two answers. Required members appear unbracketed, <span class="tt">std::optional</span> members appear bracketed, named-only members appear with their flag, positional members appear as bare metavariables. Nothing on the page is written by hand, so the page and the parser cannot drift apart. See <a class="el" href="help_8md.html" title="Help.md">Help</a>. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<map id="include/Ogma/Annotations/_pch.hpp" name="include/Ogma/Annotations/_pch.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="724,5,919,45"/>
+<area shape="rect" id="Node000002" href="$_basic_types_8hpp.html" title="Core annotations for arguments, aliases, subcommands, and propagation." alt="" coords="310,93,557,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="729,48,504,93,503,88,728,43"/>
+<area shape="rect" id="Node000016" href="$_annotations_2_chrono_8hpp.html" title="Annotations for chrono duration and time point parsers." alt="" coords="581,93,803,119"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="791,48,724,88,721,84,789,43"/>
+<area shape="rect" id="Node000017" href="$_annotations_2_filesystem_8hpp.html" title="Annotations for filesystem path validation." alt="" coords="827,93,1074,119"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="854,43,921,84,919,88,851,48"/>
+<area shape="rect" id="Node000018" href="$_annotations_2_numeric_8hpp.html" title="Annotations for numeric value formats." alt="" coords="1098,93,1329,119"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="916,43,1143,88,1142,93,915,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="338,167,409,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="425,121,394,158,390,154,421,117"/>
+<area shape="rect" id="Node000004" href="$_utils_8hpp.html" title="Common types and reflection helpers used by Ogma." alt="" coords="433,167,556,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="445,117,478,154,474,158,441,121"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,240,88,265"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="434,193,420,195,263,217,102,242,101,237,262,212,420,189,433,187"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="112,240,179,265"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="434,194,193,242,192,237,433,189"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="203,240,269,265"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="454,195,283,241,282,236,452,189"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="293,240,349,265"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="468,194,363,237,361,232,466,190"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="373,240,427,265"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="481,194,428,234,425,229,478,190"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="451,240,538,265"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="497,192,497,226,492,226,492,192"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="563,240,621,265"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="512,190,566,229,563,234,509,194"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="646,240,743,265"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="528,190,650,233,648,238,526,195"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="767,240,827,265"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="548,189,755,237,753,242,547,195"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="851,240,914,265"/>
+<area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="557,187,683,207,838,237,837,242,682,212,556,192"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="939,240,1059,265"/>
+<area shape="poly" id="edge14_Node000004_Node000015" title=" " alt="" coords="557,186,925,237,925,242,556,191"/>
+</map>

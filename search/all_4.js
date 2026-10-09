@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['c_2026_20argument_20parser_0',['A reflection-based, scope-based C++26 argument parser',['../index.html#autotoc_md11',1,'']]],
+  ['carry_20the_20scope_1',['Errors carry the scope',['../help-page.html#autotoc_md5',1,'']]],
+  ['cascade_2',['Flags never cascade',['../scopes.html#autotoc_md42',1,'']]],
+  ['casecount_3',['caseCount',['../struct_ogma_1_1_variant_arg.html#afac1532ac4d240e8ce2b9e2b26a2b3b9',1,'Ogma::VariantArg']]],
+  ['caseinsensitive_4',['CaseInsensitive',['../struct_ogma_1_1_case_insensitive.html',1,'Ogma']]],
+  ['caseinsensitive_5',['caseInsensitive',['../namespace_ogma.html#ac698cc963b3c967103f20d8525ff065e',1,'Ogma']]],
+  ['cases_6',['cases',['../struct_ogma_1_1_variant_arg.html#a56bba5426952d8cd8d556c3701d6ddb0',1,'Ogma::VariantArg']]],
+  ['caveat_7',['The one toolchain caveat',['../type-parser.html#autotoc_md38',1,'']]],
+  ['chrono_2ehpp_8',['Chrono.hpp',['../_annotations_2_chrono_8hpp.html',1,'(Global Namespace)'],['../_type_parser_2__base_2_chrono_8hpp.html',1,'(Global Namespace)']]],
+  ['closing_20token_20in_20repeated_20structural_20containers_9',['The closing token in repeated structural containers',['../scopes.html#autotoc_md44',1,'']]],
+  ['closingtoken_10',['closingToken',['../namespace_ogma.html#aad1b1ccb63c77e09728856a980ce9730',1,'Ogma']]],
+  ['comes_20from_11',['Where it comes from',['../help-page.html#autotoc_md1',1,'']]],
+  ['concatbybar_12',['concatByBar',['../namespace_ogma_1_1_utils.html#a21743fdc4f16384c08cc76e2abcd380c',1,'Ogma::Utils']]],
+  ['concatbycomma_13',['concatByComma',['../namespace_ogma_1_1_utils.html#af87f6c63b8d085aa94ff1c2fbac161f1',1,'Ogma::Utils']]],
+  ['concatbyspace_14',['concatBySpace',['../namespace_ogma_1_1_utils.html#a71d8438014d22920a10be44e3ce3d0f1',1,'Ogma::Utils']]],
+  ['conststring_15',['ConstString',['../struct_ogma_1_1_const_string.html',1,'Ogma::ConstString'],['../struct_ogma_1_1_const_string.html#adc0693818ae68c98d96071ad253b42d7',1,'Ogma::ConstString::ConstString()=default'],['../struct_ogma_1_1_const_string.html#a84835f08c4e8bd0586a58194a84ccd30',1,'Ogma::ConstString::ConstString(R &amp;&amp;value)'],['../struct_ogma_1_1_const_string.html#a3455b4fdcb654b18d42326b1a3feb1cc',1,'Ogma::ConstString::ConstString(const char *value)']]],
+  ['consumeoneandforward_16',['ConsumeOneAndForward',['../namespace_ogma_1_1_utils.html#af0d1b1dec9a4daca58b2703aa0b2e9a2',1,'Ogma::Utils::ConsumeOneAndForward(ArgSpan args) -&gt; Result&lt; std::remove_cvref_t&lt; decltype(*std::invoke(F, args[0]))&gt; &gt;'],['../namespace_ogma_1_1_utils.html#a5e6851423dd2287af3b9fdf051e8cb1b',1,'Ogma::Utils::ConsumeOneAndForward(ArgSpan args)']]],
+  ['containers_17',['The closing token in repeated structural containers',['../scopes.html#autotoc_md44',1,'']]],
+  ['containers_2ehpp_18',['Containers.hpp',['../_containers_8hpp.html',1,'']]],
+  ['contract_19',['The contract',['../type-parser.html#autotoc_md33',1,'']]],
+  ['contract_20and_20why_20it_20is_20one_20directional_20',['The contract, and why it is one-directional',['../positional-vs-named.html#autotoc_md12',1,'']]],
+  ['controltoken_21',['controlToken',['../namespace_ogma.html#a112525f03f4f8df1f85558b18b0efc58',1,'Ogma']]],
+  ['counts_20as_20a_20scope_22',['What counts as a scope',['../scopes.html#autotoc_md40',1,'']]],
+  ['cpm_23',['CPM',['../index.html#autotoc_md28',1,'']]]
+];

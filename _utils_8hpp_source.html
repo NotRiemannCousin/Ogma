@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Ogma" />
+<meta property="og:image" content="https://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta property="og:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="hhttps://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta name="twitter:title" content="Ogma" />
+<meta name="twitter:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<!-- END twitter metadata -->
+<title>Ogma: include/Ogma/Utils.hpp Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="theme-round.css" rel="stylesheet" type="text/css"/>
+<link href="theme-robot.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-msc.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/NotRiemannCousin/Ogma" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Ogma-logo.webp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Ogma
+   </div>
+   <div id="projectbrief">My Project Description</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+<div id="theme-selection">
+ <label for="theme-select">Theme:</label>
+ <select id="theme-select">
+  <option value="theme-default">Default</option>
+  <option value="theme-round">Round</option>
+  <option value="theme-robot">Robot</option>
+ </select>
+</div>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_utils_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Utils.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_utils_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;expected&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;ranges&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;format&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;meta&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;span&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ogma.html">Ogma</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespace_ogma.html#ac53fc9e840f3c4283d26fb90ab70eb60">   19</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_ogma.html#ac53fc9e840f3c4283d26fb90ab70eb60">ArgList</a> = std::vector&lt;std::string_view&gt;;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespace_ogma.html#aa4304085ebb1a4108247cc9350eaddb4">   20</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_ogma.html#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a> = std::span&lt;const std::string_view&gt;;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespace_ogma.html#a9d769eeb125646755ee34f72b19f8525">   23</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_ogma.html#a9d769eeb125646755ee34f72b19f8525">Result</a> = std::expected&lt;std::pair&lt;T, ArgSpan&gt;, std::string&gt;;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">template</span>&lt;auto Info&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespace_ogma.html#a8c338596a96a08ec87ad8e5ee8adeac3">   26</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_ogma.html#a8c338596a96a08ec87ad8e5ee8adeac3">TypeOf</a> = <span class="keyword">typename</span> [: std::meta::type_of(Info) :];</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_const_string.html">   31</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="struct_ogma_1_1_const_string.html#adc0693818ae68c98d96071ad253b42d7">ConstString</a> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_const_string.html#aff5769f59c315fa41a3b913271cd5f7e">   32</a></span>        <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="struct_ogma_1_1_const_string.html#aff5769f59c315fa41a3b913271cd5f7e">ptr</a>{};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_const_string.html#adc0693818ae68c98d96071ad253b42d7">   34</a></span>        <span class="keyword">constexpr</span> <a class="code hl_function" href="struct_ogma_1_1_const_string.html#adc0693818ae68c98d96071ad253b42d7">ConstString</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">template</span>&lt;std::ranges::range R&gt;</div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_const_string.html#a84835f08c4e8bd0586a58194a84ccd30">   36</a></span>        <span class="keyword">consteval</span> <a class="code hl_function" href="struct_ogma_1_1_const_string.html#a84835f08c4e8bd0586a58194a84ccd30">ConstString</a>(R&amp;&amp; value)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            : <a class="code hl_variable" href="struct_ogma_1_1_const_string.html#aff5769f59c315fa41a3b913271cd5f7e">ptr</a>{ std::define_static_string(value) } {}</div>
+</div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_const_string.html#a3455b4fdcb654b18d42326b1a3feb1cc">   38</a></span>        <span class="keyword">consteval</span> <a class="code hl_function" href="struct_ogma_1_1_const_string.html#a3455b4fdcb654b18d42326b1a3feb1cc">ConstString</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* value)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            : <a class="code hl_function" href="struct_ogma_1_1_const_string.html#adc0693818ae68c98d96071ad253b42d7">ConstString</a>(std::<a class="code hl_function" href="struct_ogma_1_1_const_string.html#a4aefe410165ca9892b72703521b38e51">string_view</a>{ value }) {}</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_const_string.html#a4aefe410165ca9892b72703521b38e51">   42</a></span>        <span class="keyword">constexpr</span> <span class="keyword">operator</span> std::string_view()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="struct_ogma_1_1_const_string.html#aff5769f59c315fa41a3b913271cd5f7e">ptr</a> ? std::string_view{ <a class="code hl_variable" href="struct_ogma_1_1_const_string.html#aff5769f59c315fa41a3b913271cd5f7e">ptr</a> } : std::string_view{};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_const_string.html#a2d6d90f71f405d5ff72f34f7ff1d830b">   46</a></span>        [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="struct_ogma_1_1_const_string.html#a2d6d90f71f405d5ff72f34f7ff1d830b">begin</a>() const noexcept { <span class="keywordflow">return</span> std::string_view{ <a class="code hl_variable" href="struct_ogma_1_1_const_string.html#aff5769f59c315fa41a3b913271cd5f7e">ptr</a> }.begin(); }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_const_string.html#a44fae67e74428feca7f59e2f4f7e845d">   47</a></span>        [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="struct_ogma_1_1_const_string.html#a44fae67e74428feca7f59e2f4f7e845d">end</a>()   const noexcept { <span class="keywordflow">return</span> std::string_view{ <a class="code hl_variable" href="struct_ogma_1_1_const_string.html#aff5769f59c315fa41a3b913271cd5f7e">ptr</a> }.end()  ; }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_const_string.html#a06dc050700000acf49a6c3e840eb0f9c">   49</a></span>        [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="struct_ogma_1_1_const_string.html#a06dc050700000acf49a6c3e840eb0f9c">size</a>()  const noexcept { <span class="keywordflow">return</span> std::string_view{ <a class="code hl_variable" href="struct_ogma_1_1_const_string.html#aff5769f59c315fa41a3b913271cd5f7e">ptr</a> }.size() ; }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_ogma_1_1_const_string.html#adbce1b2d31bedbbd46b4a6d7a5b8eb1c">   50</a></span>        [[nodiscard]] <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_ogma_1_1_const_string.html#adbce1b2d31bedbbd46b4a6d7a5b8eb1c">empty</a>() const noexcept { <span class="keywordflow">return</span> std::string_view{ <a class="code hl_variable" href="struct_ogma_1_1_const_string.html#aff5769f59c315fa41a3b913271cd5f7e">ptr</a> }.empty(); }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    };</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="namespace_ogma.html#a112525f03f4f8df1f85558b18b0efc58">   60</a></span>    <span class="keyword">constexpr</span> std::string_view <a class="code hl_variable" href="namespace_ogma.html#a112525f03f4f8df1f85558b18b0efc58">controlToken</a>{ <span class="stringliteral">&quot;--&quot;</span> };</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="namespace_ogma.html#aad1b1ccb63c77e09728856a980ce9730">   68</a></span>    <span class="keyword">constexpr</span> std::string_view <a class="code hl_variable" href="namespace_ogma.html#aad1b1ccb63c77e09728856a980ce9730">closingToken</a>{ <span class="stringliteral">&quot;-&quot;</span> };</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html">   73</a></span>    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ogma_1_1_utils.html">Utils</a> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a71d45065edd58c88fa82238241dd3065">   75</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a71d45065edd58c88fa82238241dd3065">IsLower</a>(<span class="keywordtype">char</span> c);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a6d9c53209ddb3d084b3200c4d98da9dd">   76</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a6d9c53209ddb3d084b3200c4d98da9dd">IsUpper</a>(<span class="keywordtype">char</span> c);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a3dbed7ce1c9e26f7c411e20aefc3ad8d">   77</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">char</span> <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a3dbed7ce1c9e26f7c411e20aefc3ad8d">ToLower</a>(<span class="keywordtype">char</span> c);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a417f1991cc1867bedf55c2d3e28d286f">   78</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">char</span> <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a417f1991cc1867bedf55c2d3e28d286f">ToUpper</a>(<span class="keywordtype">char</span> c);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a2144ae07115e605f2e82b0e95acd88f1">   80</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#a2144ae07115e605f2e82b0e95acd88f1">isEmpty</a>{ []&lt;std::ranges::range R&gt;(R&amp;&amp; str) { <span class="keywordflow">return</span> std::ranges::empty(str); } };</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#ab6acbea3693f6f895f6f09901277b387">   81</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#ab6acbea3693f6f895f6f09901277b387">notEmpty</a>{ std::not_fn(<a class="code hl_variable" href="namespace_ogma_1_1_utils.html#a2144ae07115e605f2e82b0e95acd88f1">isEmpty</a>) };</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#aeafb598a18e90b2a8b907d4d808d0d63">   84</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#aeafb598a18e90b2a8b907d4d808d0d63">joinBySpace</a>{ std::views::join_with(std::string_view{ <span class="stringliteral">&quot; &quot;</span>   }) };</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a357d15784e38d6482d605d4d9dbb0748">   85</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#a357d15784e38d6482d605d4d9dbb0748">joinByComma</a>{ std::views::join_with(std::string_view{ <span class="stringliteral">&quot;, &quot;</span>  }) };</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#ab6dad765ced55e015c28b46249facceb">   86</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#ab6dad765ced55e015c28b46249facceb">joinByBar</a>  { std::views::join_with(std::string_view{ <span class="stringliteral">&quot; | &quot;</span> }) };</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a71d8438014d22920a10be44e3ce3d0f1">   88</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#a71d8438014d22920a10be44e3ce3d0f1">concatBySpace</a>{ std::views::filter(<a class="code hl_variable" href="namespace_ogma_1_1_utils.html#ab6acbea3693f6f895f6f09901277b387">notEmpty</a>) | <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#aeafb598a18e90b2a8b907d4d808d0d63">joinBySpace</a> | std::ranges::to&lt;std::string&gt;() };</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#af87f6c63b8d085aa94ff1c2fbac161f1">   89</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#af87f6c63b8d085aa94ff1c2fbac161f1">concatByComma</a>{ std::views::filter(<a class="code hl_variable" href="namespace_ogma_1_1_utils.html#ab6acbea3693f6f895f6f09901277b387">notEmpty</a>) | <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#a357d15784e38d6482d605d4d9dbb0748">joinByComma</a> | std::ranges::to&lt;std::string&gt;() };</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a21743fdc4f16384c08cc76e2abcd380c">   90</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#a21743fdc4f16384c08cc76e2abcd380c">concatByBar</a>  { std::views::filter(<a class="code hl_variable" href="namespace_ogma_1_1_utils.html#ab6acbea3693f6f895f6f09901277b387">notEmpty</a>) | <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#ab6dad765ced55e015c28b46249facceb">joinByBar</a>   | std::ranges::to&lt;std::string&gt;() };</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a62e936948731358ea981703e59568d71">   94</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespace_ogma_1_1_utils.html#a62e936948731358ea981703e59568d71">asFlag</a>{ [](<span class="keyword">const</span> std::string_view str) { <span class="keywordflow">return</span> std::string{ <a class="code hl_variable" href="namespace_ogma.html#a112525f03f4f8df1f85558b18b0efc58">controlToken</a> } + str; } };</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keyword">template</span>&lt;std::meta::info ...Ts&gt;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a59b2d4bf9c0a58f90112ba007633f765">   98</a></span>        <span class="keyword">consteval</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a59b2d4bf9c0a58f90112ba007633f765">IsOneOf</a>(std::meta::info ref);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keyword">template</span>&lt;std::meta::info ...Ts&gt;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a5007bb1bb113c403727f760b78ffa0d9">  102</a></span>        <span class="keyword">consteval</span> std::meta::info <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a5007bb1bb113c403727f760b78ffa0d9">GetOf</a>(std::meta::info ref);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keyword">template</span>&lt;std::meta::info ...Ts&gt;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keyword">consteval</span> std::vector&lt;std::pair&lt;std::meta::info, std::meta::info&gt;&gt;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#adf195085e85d369c0214d5d0eae6269f">  107</a></span>        <a class="code hl_function" href="namespace_ogma_1_1_utils.html#adf195085e85d369c0214d5d0eae6269f">MatchedMembers</a>(std::meta::info type);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a76bab3ec243d7e028f7b7b9ed55440db">  111</a></span>        <span class="keyword">consteval</span> std::vector&lt;std::meta::info&gt; <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a76bab3ec243d7e028f7b7b9ed55440db">AnnotationValues</a>(std::meta::info member);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a0c5ec1dfeef23f876b67dc21a1a34662">  119</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a0c5ec1dfeef23f876b67dc21a1a34662">IsFlag</a>(std::string_view token);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#af26fe931e9332beb47ae9eeda09ddee5">  128</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_ogma_1_1_utils.html#af26fe931e9332beb47ae9eeda09ddee5">IsValidFlagName</a>(std::string_view name);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a7aa34c965b54bc0c5fe6c3551d300561">  133</a></span>        <span class="keyword">consteval</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a7aa34c965b54bc0c5fe6c3551d300561">IsSpecializationOf</a>(std::meta::info templ);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keyword">template</span>&lt;<span class="keyword">class </span>Tag, <span class="keyword">auto</span>... Annotations&gt;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a8d100f25acdf778304b2527a191ec802">  137</a></span>        <span class="keyword">consteval</span> std::optional&lt;Tag&gt; <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a8d100f25acdf778304b2527a191ec802">GetAnnotation</a>();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keyword">template</span>&lt;auto Value&gt;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#af3516ec240d7deb1016c6eafdb5bb45b">  141</a></span>        <span class="keyword">consteval</span> std::meta::info <a class="code hl_function" href="namespace_ogma_1_1_utils.html#af3516ec240d7deb1016c6eafdb5bb45b">ReflectValue</a>();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keyword">template</span>&lt;<span class="keyword">auto</span>... Annotations&gt;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a59123fa46339241d7ddc11edff7b00bb">  145</a></span>        <span class="keyword">consteval</span> std::vector&lt;std::meta::info&gt; <a class="code hl_function" href="namespace_ogma_1_1_utils.html#a59123fa46339241d7ddc11edff7b00bb">GetForwardedAnnots</a>();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#aae334a37a3158745b6d11bde18b2052e">  152</a></span>        <span class="keyword">constexpr</span> std::expected&lt;T, std::string&gt; <a class="code hl_function" href="namespace_ogma_1_1_utils.html#aae334a37a3158745b6d11bde18b2052e">GetNumber</a>(std::string_view value, <span class="keyword">auto</span>... args);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keyword">template</span>&lt;auto F&gt;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#af0d1b1dec9a4daca58b2703aa0b2e9a2">  156</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespace_ogma_1_1_utils.html#af0d1b1dec9a4daca58b2703aa0b2e9a2">ConsumeOneAndForward</a>(<a class="code hl_typedef" href="namespace_ogma.html#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a> args) -&gt; <a class="code hl_typedef" href="namespace_ogma.html#a9d769eeb125646755ee34f72b19f8525">Result</a>&lt;std::remove_cvref_t&lt;<span class="keyword">decltype</span>(*std::invoke(F, args[0]))&gt;&gt;;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="namespace_ogma_1_1_utils.html#a5e6851423dd2287af3b9fdf051e8cb1b">  158</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespace_ogma_1_1_utils.html#af0d1b1dec9a4daca58b2703aa0b2e9a2">ConsumeOneAndForward</a>(<a class="code hl_typedef" href="namespace_ogma.html#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a> args);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
+</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> std::ranges::enable_borrowed_range&lt;Ogma::ConstString&gt; = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keyword">template</span>&lt;&gt;</div>
+<div class="foldopen" id="foldopen00167" data-start="{" data-end="};">
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="structstd_1_1formatter_3_01_ogma_1_1_const_string_01_4.html">  167</a></span><span class="keyword">struct </span>std::formatter&lt;<a class="code hl_namespace" href="namespace_ogma.html">Ogma</a>::ConstString&gt; : std::formatter&lt;std::string_view&gt; {</div>
+<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="structstd_1_1formatter_3_01_ogma_1_1_const_string_01_4.html#a3c9100368dbc070e36ca27ab40010999">  168</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="structstd_1_1formatter_3_01_ogma_1_1_const_string_01_4.html#a3c9100368dbc070e36ca27ab40010999">format</a>(<a class="code hl_struct" href="struct_ogma_1_1_const_string.html">Ogma::ConstString</a> value, std::format_context&amp; context)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">return</span> std::formatter&lt;std::string_view&gt;::format(value, context);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
+</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>};</div>
+</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">#include &lt;Ogma/Utils.tpp&gt;</span></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html"><div class="ttname"><a href="namespace_ogma_1_1_utils.html">Ogma::Utils</a></div><div class="ttdef"><b>Definition</b> Utils.hpp:73</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a0c5ec1dfeef23f876b67dc21a1a34662"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a0c5ec1dfeef23f876b67dc21a1a34662">Ogma::Utils::IsFlag</a></div><div class="ttdeci">constexpr bool IsFlag(std::string_view token)</div><div class="ttdoc">Check if the token denotes a flag entry (a string starting with &quot;--&quot; with size greater than 2).</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a2144ae07115e605f2e82b0e95acd88f1"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a2144ae07115e605f2e82b0e95acd88f1">Ogma::Utils::isEmpty</a></div><div class="ttdeci">constexpr auto isEmpty</div><div class="ttdef"><b>Definition</b> Utils.hpp:80</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a21743fdc4f16384c08cc76e2abcd380c"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a21743fdc4f16384c08cc76e2abcd380c">Ogma::Utils::concatByBar</a></div><div class="ttdeci">constexpr auto concatByBar</div><div class="ttdef"><b>Definition</b> Utils.hpp:90</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a357d15784e38d6482d605d4d9dbb0748"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a357d15784e38d6482d605d4d9dbb0748">Ogma::Utils::joinByComma</a></div><div class="ttdeci">constexpr auto joinByComma</div><div class="ttdef"><b>Definition</b> Utils.hpp:85</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a3dbed7ce1c9e26f7c411e20aefc3ad8d"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a3dbed7ce1c9e26f7c411e20aefc3ad8d">Ogma::Utils::ToLower</a></div><div class="ttdeci">constexpr char ToLower(char c)</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a417f1991cc1867bedf55c2d3e28d286f"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a417f1991cc1867bedf55c2d3e28d286f">Ogma::Utils::ToUpper</a></div><div class="ttdeci">constexpr char ToUpper(char c)</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a5007bb1bb113c403727f760b78ffa0d9"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a5007bb1bb113c403727f760b78ffa0d9">Ogma::Utils::GetOf</a></div><div class="ttdeci">consteval std::meta::info GetOf(std::meta::info ref)</div><div class="ttdoc">Returns the only annotation of one of the requested types.</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a59123fa46339241d7ddc11edff7b00bb"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a59123fa46339241d7ddc11edff7b00bb">Ogma::Utils::GetForwardedAnnots</a></div><div class="ttdeci">consteval std::vector&lt; std::meta::info &gt; GetForwardedAnnots()</div><div class="ttdoc">Returns the annotations of Value that are Fwd.</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a59b2d4bf9c0a58f90112ba007633f765"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a59b2d4bf9c0a58f90112ba007633f765">Ogma::Utils::IsOneOf</a></div><div class="ttdeci">consteval bool IsOneOf(std::meta::info ref)</div><div class="ttdoc">Checks whether a member has exactly one requested annotation.</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a62e936948731358ea981703e59568d71"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a62e936948731358ea981703e59568d71">Ogma::Utils::asFlag</a></div><div class="ttdeci">constexpr auto asFlag</div><div class="ttdef"><b>Definition</b> Utils.hpp:94</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a6d9c53209ddb3d084b3200c4d98da9dd"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a6d9c53209ddb3d084b3200c4d98da9dd">Ogma::Utils::IsUpper</a></div><div class="ttdeci">constexpr bool IsUpper(char c)</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a71d45065edd58c88fa82238241dd3065"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a71d45065edd58c88fa82238241dd3065">Ogma::Utils::IsLower</a></div><div class="ttdeci">constexpr bool IsLower(char c)</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a71d8438014d22920a10be44e3ce3d0f1"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a71d8438014d22920a10be44e3ce3d0f1">Ogma::Utils::concatBySpace</a></div><div class="ttdeci">constexpr auto concatBySpace</div><div class="ttdef"><b>Definition</b> Utils.hpp:88</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a76bab3ec243d7e028f7b7b9ed55440db"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a76bab3ec243d7e028f7b7b9ed55440db">Ogma::Utils::AnnotationValues</a></div><div class="ttdeci">consteval std::vector&lt; std::meta::info &gt; AnnotationValues(std::meta::info member)</div><div class="ttdoc">Get the annotations of a member and convert it with std::meta::constant_of (from reflection of annota...</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a7aa34c965b54bc0c5fe6c3551d300561"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a7aa34c965b54bc0c5fe6c3551d300561">Ogma::Utils::IsSpecializationOf</a></div><div class="ttdeci">consteval bool IsSpecializationOf(std::meta::info templ)</div><div class="ttdoc">Checks if templ is a specialisation of base.</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_a8d100f25acdf778304b2527a191ec802"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#a8d100f25acdf778304b2527a191ec802">Ogma::Utils::GetAnnotation</a></div><div class="ttdeci">consteval std::optional&lt; Tag &gt; GetAnnotation()</div><div class="ttdoc">Returns the first annotation of type Tag.</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_aae334a37a3158745b6d11bde18b2052e"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#aae334a37a3158745b6d11bde18b2052e">Ogma::Utils::GetNumber</a></div><div class="ttdeci">constexpr std::expected&lt; T, std::string &gt; GetNumber(std::string_view value, auto... args)</div><div class="ttdoc">Convert a string to a number of type T using std::from_chars.</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_ab6acbea3693f6f895f6f09901277b387"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#ab6acbea3693f6f895f6f09901277b387">Ogma::Utils::notEmpty</a></div><div class="ttdeci">constexpr auto notEmpty</div><div class="ttdef"><b>Definition</b> Utils.hpp:81</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_ab6dad765ced55e015c28b46249facceb"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#ab6dad765ced55e015c28b46249facceb">Ogma::Utils::joinByBar</a></div><div class="ttdeci">constexpr auto joinByBar</div><div class="ttdef"><b>Definition</b> Utils.hpp:86</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_adf195085e85d369c0214d5d0eae6269f"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#adf195085e85d369c0214d5d0eae6269f">Ogma::Utils::MatchedMembers</a></div><div class="ttdeci">consteval std::vector&lt; std::pair&lt; std::meta::info, std::meta::info &gt; &gt; MatchedMembers(std::meta::info type)</div><div class="ttdoc">Collects members together with their matching annotation.</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_aeafb598a18e90b2a8b907d4d808d0d63"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#aeafb598a18e90b2a8b907d4d808d0d63">Ogma::Utils::joinBySpace</a></div><div class="ttdeci">constexpr auto joinBySpace</div><div class="ttdef"><b>Definition</b> Utils.hpp:84</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_af0d1b1dec9a4daca58b2703aa0b2e9a2"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#af0d1b1dec9a4daca58b2703aa0b2e9a2">Ogma::Utils::ConsumeOneAndForward</a></div><div class="ttdeci">constexpr auto ConsumeOneAndForward(ArgSpan args) -&gt; Result&lt; std::remove_cvref_t&lt; decltype(*std::invoke(F, args[0]))&gt; &gt;</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_af26fe931e9332beb47ae9eeda09ddee5"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#af26fe931e9332beb47ae9eeda09ddee5">Ogma::Utils::IsValidFlagName</a></div><div class="ttdeci">constexpr bool IsValidFlagName(std::string_view name)</div><div class="ttdoc">Checks if name is a valid flag name.</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_af3516ec240d7deb1016c6eafdb5bb45b"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#af3516ec240d7deb1016c6eafdb5bb45b">Ogma::Utils::ReflectValue</a></div><div class="ttdeci">consteval std::meta::info ReflectValue()</div></div>
+<div class="ttc" id="anamespace_ogma_1_1_utils_html_af87f6c63b8d085aa94ff1c2fbac161f1"><div class="ttname"><a href="namespace_ogma_1_1_utils.html#af87f6c63b8d085aa94ff1c2fbac161f1">Ogma::Utils::concatByComma</a></div><div class="ttdeci">constexpr auto concatByComma</div><div class="ttdef"><b>Definition</b> Utils.hpp:89</div></div>
+<div class="ttc" id="anamespace_ogma_html"><div class="ttname"><a href="namespace_ogma.html">Ogma</a></div><div class="ttdef"><b>Definition</b> _base.hpp:5</div></div>
+<div class="ttc" id="anamespace_ogma_html_a112525f03f4f8df1f85558b18b0efc58"><div class="ttname"><a href="namespace_ogma.html#a112525f03f4f8df1f85558b18b0efc58">Ogma::controlToken</a></div><div class="ttdeci">constexpr std::string_view controlToken</div><div class="ttdoc">The double-hyphen token from POSIX, repurposed as a general control token.</div><div class="ttdef"><b>Definition</b> Utils.hpp:60</div></div>
+<div class="ttc" id="anamespace_ogma_html_a8c338596a96a08ec87ad8e5ee8adeac3"><div class="ttname"><a href="namespace_ogma.html#a8c338596a96a08ec87ad8e5ee8adeac3">Ogma::TypeOf</a></div><div class="ttdeci">typename[:std::meta::type_of(Info) :] TypeOf</div><div class="ttdef"><b>Definition</b> Utils.hpp:26</div></div>
+<div class="ttc" id="anamespace_ogma_html_a9d769eeb125646755ee34f72b19f8525"><div class="ttname"><a href="namespace_ogma.html#a9d769eeb125646755ee34f72b19f8525">Ogma::Result</a></div><div class="ttdeci">std::expected&lt; std::pair&lt; T, ArgSpan &gt;, std::string &gt; Result</div><div class="ttdef"><b>Definition</b> Utils.hpp:23</div></div>
+<div class="ttc" id="anamespace_ogma_html_aa4304085ebb1a4108247cc9350eaddb4"><div class="ttname"><a href="namespace_ogma.html#aa4304085ebb1a4108247cc9350eaddb4">Ogma::ArgSpan</a></div><div class="ttdeci">std::span&lt; const std::string_view &gt; ArgSpan</div><div class="ttdef"><b>Definition</b> Utils.hpp:20</div></div>
+<div class="ttc" id="anamespace_ogma_html_aad1b1ccb63c77e09728856a980ce9730"><div class="ttname"><a href="namespace_ogma.html#aad1b1ccb63c77e09728856a980ce9730">Ogma::closingToken</a></div><div class="ttdeci">constexpr std::string_view closingToken</div><div class="ttdoc">The single-hyphen token that closes the current scope.</div><div class="ttdef"><b>Definition</b> Utils.hpp:68</div></div>
+<div class="ttc" id="anamespace_ogma_html_ac53fc9e840f3c4283d26fb90ab70eb60"><div class="ttname"><a href="namespace_ogma.html#ac53fc9e840f3c4283d26fb90ab70eb60">Ogma::ArgList</a></div><div class="ttdeci">std::vector&lt; std::string_view &gt; ArgList</div><div class="ttdef"><b>Definition</b> Utils.hpp:19</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html"><div class="ttname"><a href="struct_ogma_1_1_const_string.html">Ogma::ConstString</a></div><div class="ttdoc">A string with compile time static storage.</div><div class="ttdef"><b>Definition</b> Utils.hpp:31</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html_a06dc050700000acf49a6c3e840eb0f9c"><div class="ttname"><a href="struct_ogma_1_1_const_string.html#a06dc050700000acf49a6c3e840eb0f9c">Ogma::ConstString::size</a></div><div class="ttdeci">constexpr auto size() const noexcept</div><div class="ttdef"><b>Definition</b> Utils.hpp:49</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html_a2d6d90f71f405d5ff72f34f7ff1d830b"><div class="ttname"><a href="struct_ogma_1_1_const_string.html#a2d6d90f71f405d5ff72f34f7ff1d830b">Ogma::ConstString::begin</a></div><div class="ttdeci">constexpr auto begin() const noexcept</div><div class="ttdef"><b>Definition</b> Utils.hpp:46</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html_a3455b4fdcb654b18d42326b1a3feb1cc"><div class="ttname"><a href="struct_ogma_1_1_const_string.html#a3455b4fdcb654b18d42326b1a3feb1cc">Ogma::ConstString::ConstString</a></div><div class="ttdeci">consteval ConstString(const char *value)</div><div class="ttdef"><b>Definition</b> Utils.hpp:38</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html_a44fae67e74428feca7f59e2f4f7e845d"><div class="ttname"><a href="struct_ogma_1_1_const_string.html#a44fae67e74428feca7f59e2f4f7e845d">Ogma::ConstString::end</a></div><div class="ttdeci">constexpr auto end() const noexcept</div><div class="ttdef"><b>Definition</b> Utils.hpp:47</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html_a4aefe410165ca9892b72703521b38e51"><div class="ttname"><a href="struct_ogma_1_1_const_string.html#a4aefe410165ca9892b72703521b38e51">Ogma::ConstString::string_view</a></div><div class="ttdeci">constexpr operator std::string_view() const</div><div class="ttdef"><b>Definition</b> Utils.hpp:42</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html_a84835f08c4e8bd0586a58194a84ccd30"><div class="ttname"><a href="struct_ogma_1_1_const_string.html#a84835f08c4e8bd0586a58194a84ccd30">Ogma::ConstString::ConstString</a></div><div class="ttdeci">consteval ConstString(R &amp;&amp;value)</div><div class="ttdef"><b>Definition</b> Utils.hpp:36</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html_adbce1b2d31bedbbd46b4a6d7a5b8eb1c"><div class="ttname"><a href="struct_ogma_1_1_const_string.html#adbce1b2d31bedbbd46b4a6d7a5b8eb1c">Ogma::ConstString::empty</a></div><div class="ttdeci">constexpr bool empty() const noexcept</div><div class="ttdef"><b>Definition</b> Utils.hpp:50</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html_adc0693818ae68c98d96071ad253b42d7"><div class="ttname"><a href="struct_ogma_1_1_const_string.html#adc0693818ae68c98d96071ad253b42d7">Ogma::ConstString::ConstString</a></div><div class="ttdeci">constexpr ConstString()=default</div></div>
+<div class="ttc" id="astruct_ogma_1_1_const_string_html_aff5769f59c315fa41a3b913271cd5f7e"><div class="ttname"><a href="struct_ogma_1_1_const_string.html#aff5769f59c315fa41a3b913271cd5f7e">Ogma::ConstString::ptr</a></div><div class="ttdeci">const char * ptr</div><div class="ttdef"><b>Definition</b> Utils.hpp:32</div></div>
+<div class="ttc" id="astructstd_1_1formatter_3_01_ogma_1_1_const_string_01_4_html_a3c9100368dbc070e36ca27ab40010999"><div class="ttname"><a href="structstd_1_1formatter_3_01_ogma_1_1_const_string_01_4.html#a3c9100368dbc070e36ca27ab40010999">std::formatter&lt; Ogma::ConstString &gt;::format</a></div><div class="ttdeci">auto format(Ogma::ConstString value, std::format_context &amp;context) const</div><div class="ttdef"><b>Definition</b> Utils.hpp:168</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="dir_305296125a2aee3a7714331817d5eb6d.html">Ogma</a></li><li class="navelem"><a href="_utils_8hpp.html">Utils.hpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

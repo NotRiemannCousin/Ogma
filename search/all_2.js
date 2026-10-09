@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['a_20reflection_20based_20scope_20based_20c_2026_20argument_20parser_0',['A reflection-based, scope-based C++26 argument parser',['../index.html#autotoc_md11',1,'']]],
+  ['a_20scope_1',['What counts as a scope',['../scopes.html#autotoc_md40',1,'']]],
+  ['alias_2',['Alias',['../struct_ogma_1_1_alias.html',1,'Ogma']]],
+  ['all_20of_20this_3',['The help page reflects all of this',['../positional-vs-named.html#autotoc_md17',1,'']]],
+  ['allowspecialvalues_4',['AllowSpecialValues',['../struct_ogma_1_1_allow_special_values.html',1,'Ogma']]],
+  ['allowspecialvalues_5',['allowSpecialValues',['../namespace_ogma.html#aa9b14856801cc770fda3b1ca0450a39f',1,'Ogma']]],
+  ['and_20are_20different_20tokens_6',['&lt;span class=&quot;tt&quot;&gt;-&lt;/span&gt; and &lt;span class=&quot;tt&quot;&gt;--&lt;/span&gt; are different tokens',['../scopes.html#autotoc_md45',1,'']]],
+  ['and_20leaving_7',['Entering and leaving',['../scopes.html#autotoc_md41',1,'']]],
+  ['and_20why_20it_20is_20one_20directional_8',['The contract, and why it is one-directional',['../positional-vs-named.html#autotoc_md12',1,'']]],
+  ['annotations_9',['Annotations',['../index.html#autotoc_md23',1,'']]],
+  ['annotationvalues_10',['AnnotationValues',['../namespace_ogma_1_1_utils.html#a76bab3ec243d7e028f7b7b9ed55440db',1,'Ogma::Utils']]],
+  ['api_11',['The programmatic API',['../help-page.html#autotoc_md7',1,'']]],
+  ['append_12',['Append',['../struct_ogma_1_1_append.html',1,'Ogma']]],
+  ['append_13',['append',['../namespace_ogma.html#ac4ab0bdf34141ced995126bd80887982',1,'Ogma']]],
+  ['appinfo_14',['AppInfo',['../struct_ogma_1_1_app_info.html',1,'Ogma']]],
+  ['are_20different_20tokens_15',['&lt;span class=&quot;tt&quot;&gt;-&lt;/span&gt; and &lt;span class=&quot;tt&quot;&gt;--&lt;/span&gt; are different tokens',['../scopes.html#autotoc_md45',1,'']]],
+  ['are_20fine_16',['Homonyms are fine',['../scopes.html#autotoc_md43',1,'']]],
+  ['arg_17',['Arg',['../struct_ogma_1_1_arg.html',1,'Ogma']]],
+  ['arglist_18',['ArgList',['../namespace_ogma.html#ac53fc9e840f3c4283d26fb90ab70eb60',1,'Ogma']]],
+  ['argspan_19',['ArgSpan',['../namespace_ogma.html#aa4304085ebb1a4108247cc9350eaddb4',1,'Ogma']]],
+  ['argument_20parser_20',['A reflection-based, scope-based C++26 argument parser',['../index.html#autotoc_md11',1,'']]],
+  ['arguments_21',['Positional vs Named Arguments',['../positional-vs-named.html',1,'']]],
+  ['as_20a_20scope_22',['What counts as a scope',['../scopes.html#autotoc_md40',1,'']]],
+  ['asflag_23',['asFlag',['../namespace_ogma_1_1_utils.html#a62e936948731358ea981703e59568d71',1,'Ogma::Utils']]]
+];

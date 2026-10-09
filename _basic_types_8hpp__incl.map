@@ -1,0 +1,29 @@
+<map id="include/Ogma/Annotations/BasicTypes.hpp" name="include/Ogma/Annotations/BasicTypes.hpp">
+<area shape="rect" id="Node000001" title="Core annotations for arguments, aliases, subcommands, and propagation." alt="" coords="336,5,531,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="338,93,409,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="421,47,393,84,388,81,417,44"/>
+<area shape="rect" id="Node000003" href="$_utils_8hpp.html" title="Common types and reflection helpers used by Ogma." alt="" coords="433,93,556,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="450,44,479,81,475,84,446,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,167,88,192"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="434,119,420,121,263,143,102,169,101,164,262,138,420,116,433,114"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="112,167,179,192"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="434,121,193,169,192,164,433,116"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="203,167,269,192"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="454,121,283,168,282,163,452,116"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="293,167,349,192"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="468,121,363,164,361,159,466,116"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="373,167,427,192"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="481,121,428,160,425,156,478,117"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="451,167,538,192"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="497,119,497,153,492,153,492,119"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="563,167,621,192"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="512,117,566,156,563,160,509,121"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="646,167,743,192"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="528,116,650,159,648,164,526,121"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="767,167,827,192"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="548,116,755,164,753,169,547,121"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="851,167,914,192"/>
+<area shape="poly" id="edge12_Node000003_Node000013" title=" " alt="" coords="557,114,683,134,838,164,837,169,682,139,556,119"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="939,167,1059,192"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="557,113,925,164,925,169,556,118"/>
+</map>

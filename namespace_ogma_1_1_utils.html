@@ -1,0 +1,890 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Ogma" />
+<meta property="og:image" content="https://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta property="og:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="hhttps://github.com/NotRiemannCousin/Ogma/blob/master/images/Ogma-logo-55px.webp?raw=true" />
+<meta name="twitter:title" content="Ogma" />
+<meta name="twitter:description" content="A functional, expressive, asynchronous C++26 webdev library" />
+<!-- END twitter metadata -->
+<title>Ogma: Ogma::Utils Namespace Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="theme-round.css" rel="stylesheet" type="text/css"/>
+<link href="theme-robot.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-msc.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/NotRiemannCousin/Ogma" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Ogma-logo.webp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Ogma
+   </div>
+   <div id="projectbrief">My Project Description</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+<div id="theme-selection">
+ <label for="theme-select">Theme:</label>
+ <select id="theme-select">
+  <option value="theme-default">Default</option>
+  <option value="theme-round">Round</option>
+  <option value="theme-robot">Robot</option>
+ </select>
+</div>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_ogma_1_1_utils.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Ogma::Utils Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a71d45065edd58c88fa82238241dd3065" id="r_a71d45065edd58c88fa82238241dd3065"><td class="memItemLeft">constexpr bool&#160;</td><td class="memItemRight"><a class="el" href="#a71d45065edd58c88fa82238241dd3065">IsLower</a> (char c)</td></tr>
+<tr class="memitem:a6d9c53209ddb3d084b3200c4d98da9dd" id="r_a6d9c53209ddb3d084b3200c4d98da9dd"><td class="memItemLeft">constexpr bool&#160;</td><td class="memItemRight"><a class="el" href="#a6d9c53209ddb3d084b3200c4d98da9dd">IsUpper</a> (char c)</td></tr>
+<tr class="memitem:a3dbed7ce1c9e26f7c411e20aefc3ad8d" id="r_a3dbed7ce1c9e26f7c411e20aefc3ad8d"><td class="memItemLeft">constexpr char&#160;</td><td class="memItemRight"><a class="el" href="#a3dbed7ce1c9e26f7c411e20aefc3ad8d">ToLower</a> (char c)</td></tr>
+<tr class="memitem:a417f1991cc1867bedf55c2d3e28d286f" id="r_a417f1991cc1867bedf55c2d3e28d286f"><td class="memItemLeft">constexpr char&#160;</td><td class="memItemRight"><a class="el" href="#a417f1991cc1867bedf55c2d3e28d286f">ToUpper</a> (char c)</td></tr>
+<tr class="memitem:a59b2d4bf9c0a58f90112ba007633f765" id="r_a59b2d4bf9c0a58f90112ba007633f765"><td class="memTemplParams" colspan="2">template&lt;std::meta::info ... Ts&gt; </td></tr>
+<tr class="memitem:a59b2d4bf9c0a58f90112ba007633f765 template"><td class="memItemLeft">consteval bool&#160;</td><td class="memItemRight"><a class="el" href="#a59b2d4bf9c0a58f90112ba007633f765">IsOneOf</a> (std::meta::info ref)</td></tr>
+<tr class="memdesc:a59b2d4bf9c0a58f90112ba007633f765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a member has exactly one requested annotation.  <br /></td></tr>
+<tr class="memitem:a5007bb1bb113c403727f760b78ffa0d9" id="r_a5007bb1bb113c403727f760b78ffa0d9"><td class="memTemplParams" colspan="2">template&lt;std::meta::info ... Ts&gt; </td></tr>
+<tr class="memitem:a5007bb1bb113c403727f760b78ffa0d9 template"><td class="memItemLeft">consteval std::meta::info&#160;</td><td class="memItemRight"><a class="el" href="#a5007bb1bb113c403727f760b78ffa0d9">GetOf</a> (std::meta::info ref)</td></tr>
+<tr class="memdesc:a5007bb1bb113c403727f760b78ffa0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the only annotation of one of the requested types.  <br /></td></tr>
+<tr class="memitem:adf195085e85d369c0214d5d0eae6269f" id="r_adf195085e85d369c0214d5d0eae6269f"><td class="memTemplParams" colspan="2">template&lt;std::meta::info ... Ts&gt; </td></tr>
+<tr class="memitem:adf195085e85d369c0214d5d0eae6269f template"><td class="memItemLeft">consteval std::vector&lt; std::pair&lt; std::meta::info, std::meta::info &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#adf195085e85d369c0214d5d0eae6269f">MatchedMembers</a> (std::meta::info type)</td></tr>
+<tr class="memdesc:adf195085e85d369c0214d5d0eae6269f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects members together with their matching annotation.  <br /></td></tr>
+<tr class="memitem:a76bab3ec243d7e028f7b7b9ed55440db" id="r_a76bab3ec243d7e028f7b7b9ed55440db"><td class="memItemLeft">consteval std::vector&lt; std::meta::info &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a76bab3ec243d7e028f7b7b9ed55440db">AnnotationValues</a> (std::meta::info member)</td></tr>
+<tr class="memdesc:a76bab3ec243d7e028f7b7b9ed55440db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the annotations of a member and convert it with <span class="tt">std::meta::constant_of</span> (from reflection of annotation to reflection of a value).  <br /></td></tr>
+<tr class="memitem:a0c5ec1dfeef23f876b67dc21a1a34662" id="r_a0c5ec1dfeef23f876b67dc21a1a34662"><td class="memItemLeft">constexpr bool&#160;</td><td class="memItemRight"><a class="el" href="#a0c5ec1dfeef23f876b67dc21a1a34662">IsFlag</a> (std::string_view token)</td></tr>
+<tr class="memdesc:a0c5ec1dfeef23f876b67dc21a1a34662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the token denotes a flag entry (a string starting with "--" with size greater than 2).  <br /></td></tr>
+<tr class="memitem:af26fe931e9332beb47ae9eeda09ddee5" id="r_af26fe931e9332beb47ae9eeda09ddee5"><td class="memItemLeft">constexpr bool&#160;</td><td class="memItemRight"><a class="el" href="#af26fe931e9332beb47ae9eeda09ddee5">IsValidFlagName</a> (std::string_view name)</td></tr>
+<tr class="memdesc:af26fe931e9332beb47ae9eeda09ddee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <code class="param">name</code> is a valid flag name.  <br /></td></tr>
+<tr class="memitem:a7aa34c965b54bc0c5fe6c3551d300561" id="r_a7aa34c965b54bc0c5fe6c3551d300561"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a7aa34c965b54bc0c5fe6c3551d300561 template"><td class="memItemLeft">consteval bool&#160;</td><td class="memItemRight"><a class="el" href="#a7aa34c965b54bc0c5fe6c3551d300561">IsSpecializationOf</a> (std::meta::info templ)</td></tr>
+<tr class="memdesc:a7aa34c965b54bc0c5fe6c3551d300561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <code class="param">templ</code> is a specialisation of <code class="param">base</code>.  <br /></td></tr>
+<tr class="memitem:a8d100f25acdf778304b2527a191ec802" id="r_a8d100f25acdf778304b2527a191ec802"><td class="memTemplParams" colspan="2">template&lt;class Tag, auto... Annotations&gt; </td></tr>
+<tr class="memitem:a8d100f25acdf778304b2527a191ec802 template"><td class="memItemLeft">consteval std::optional&lt; Tag &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8d100f25acdf778304b2527a191ec802">GetAnnotation</a> ()</td></tr>
+<tr class="memdesc:a8d100f25acdf778304b2527a191ec802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first annotation of type <code class="param">Tag</code>.  <br /></td></tr>
+<tr class="memitem:af3516ec240d7deb1016c6eafdb5bb45b" id="r_af3516ec240d7deb1016c6eafdb5bb45b"><td class="memTemplParams" colspan="2">template&lt;auto Value&gt; </td></tr>
+<tr class="memitem:af3516ec240d7deb1016c6eafdb5bb45b template"><td class="memItemLeft">consteval std::meta::info&#160;</td><td class="memItemRight"><a class="el" href="#af3516ec240d7deb1016c6eafdb5bb45b">ReflectValue</a> ()</td></tr>
+<tr class="memitem:a59123fa46339241d7ddc11edff7b00bb" id="r_a59123fa46339241d7ddc11edff7b00bb"><td class="memTemplParams" colspan="2">template&lt;auto... Annotations&gt; </td></tr>
+<tr class="memitem:a59123fa46339241d7ddc11edff7b00bb template"><td class="memItemLeft">consteval std::vector&lt; std::meta::info &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a59123fa46339241d7ddc11edff7b00bb">GetForwardedAnnots</a> ()</td></tr>
+<tr class="memdesc:a59123fa46339241d7ddc11edff7b00bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the annotations of <code class="param">Value</code> that are <a class="el" href="struct_ogma_1_1_fwd.html" title="Fwd">Fwd</a>.  <br /></td></tr>
+<tr class="memitem:aae334a37a3158745b6d11bde18b2052e" id="r_aae334a37a3158745b6d11bde18b2052e"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:aae334a37a3158745b6d11bde18b2052e template"><td class="memItemLeft">constexpr std::expected&lt; T, std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aae334a37a3158745b6d11bde18b2052e">GetNumber</a> (std::string_view value, auto... args)</td></tr>
+<tr class="memdesc:aae334a37a3158745b6d11bde18b2052e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string to a number of type T using <code>std::from_chars</code>.  <br /></td></tr>
+<tr class="memitem:af0d1b1dec9a4daca58b2703aa0b2e9a2" id="r_af0d1b1dec9a4daca58b2703aa0b2e9a2"><td class="memTemplParams" colspan="2">template&lt;auto F&gt; </td></tr>
+<tr class="memitem:af0d1b1dec9a4daca58b2703aa0b2e9a2 template"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#af0d1b1dec9a4daca58b2703aa0b2e9a2">ConsumeOneAndForward</a> (<a class="el" href="namespace_ogma.html#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a> args) -&gt; <a class="el" href="namespace_ogma.html#a9d769eeb125646755ee34f72b19f8525">Result</a>&lt; std::remove_cvref_t&lt; decltype(*std::invoke(F, args[0]))&gt; &gt;</td></tr>
+<tr class="memitem:a5e6851423dd2287af3b9fdf051e8cb1b" id="r_a5e6851423dd2287af3b9fdf051e8cb1b"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a5e6851423dd2287af3b9fdf051e8cb1b template"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#a5e6851423dd2287af3b9fdf051e8cb1b">ConsumeOneAndForward</a> (<a class="el" href="namespace_ogma.html#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a> args)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2144ae07115e605f2e82b0e95acd88f1" id="r_a2144ae07115e605f2e82b0e95acd88f1"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#a2144ae07115e605f2e82b0e95acd88f1">isEmpty</a> { []&lt;std::ranges::range R&gt;(R&amp;&amp; str) { return std::ranges::empty(str); } }</td></tr>
+<tr class="memitem:ab6acbea3693f6f895f6f09901277b387" id="r_ab6acbea3693f6f895f6f09901277b387"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#ab6acbea3693f6f895f6f09901277b387">notEmpty</a> { std::not_fn(<a class="el" href="#a2144ae07115e605f2e82b0e95acd88f1">isEmpty</a>) }</td></tr>
+<tr class="memitem:aeafb598a18e90b2a8b907d4d808d0d63" id="r_aeafb598a18e90b2a8b907d4d808d0d63"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#aeafb598a18e90b2a8b907d4d808d0d63">joinBySpace</a> { std::views::join_with(std::string_view{ &quot; &quot; }) }</td></tr>
+<tr class="memitem:a357d15784e38d6482d605d4d9dbb0748" id="r_a357d15784e38d6482d605d4d9dbb0748"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#a357d15784e38d6482d605d4d9dbb0748">joinByComma</a> { std::views::join_with(std::string_view{ &quot;, &quot; }) }</td></tr>
+<tr class="memitem:ab6dad765ced55e015c28b46249facceb" id="r_ab6dad765ced55e015c28b46249facceb"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#ab6dad765ced55e015c28b46249facceb">joinByBar</a> { std::views::join_with(std::string_view{ &quot; | &quot; }) }</td></tr>
+<tr class="memitem:a71d8438014d22920a10be44e3ce3d0f1" id="r_a71d8438014d22920a10be44e3ce3d0f1"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#a71d8438014d22920a10be44e3ce3d0f1">concatBySpace</a> { std::views::filter(<a class="el" href="#ab6acbea3693f6f895f6f09901277b387">notEmpty</a>) | <a class="el" href="#aeafb598a18e90b2a8b907d4d808d0d63">joinBySpace</a> | std::ranges::to&lt;std::string&gt;() }</td></tr>
+<tr class="memitem:af87f6c63b8d085aa94ff1c2fbac161f1" id="r_af87f6c63b8d085aa94ff1c2fbac161f1"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#af87f6c63b8d085aa94ff1c2fbac161f1">concatByComma</a> { std::views::filter(<a class="el" href="#ab6acbea3693f6f895f6f09901277b387">notEmpty</a>) | <a class="el" href="#a357d15784e38d6482d605d4d9dbb0748">joinByComma</a> | std::ranges::to&lt;std::string&gt;() }</td></tr>
+<tr class="memitem:a21743fdc4f16384c08cc76e2abcd380c" id="r_a21743fdc4f16384c08cc76e2abcd380c"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#a21743fdc4f16384c08cc76e2abcd380c">concatByBar</a> { std::views::filter(<a class="el" href="#ab6acbea3693f6f895f6f09901277b387">notEmpty</a>) | <a class="el" href="#ab6dad765ced55e015c28b46249facceb">joinByBar</a> | std::ranges::to&lt;std::string&gt;() }</td></tr>
+<tr class="memitem:a62e936948731358ea981703e59568d71" id="r_a62e936948731358ea981703e59568d71"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#a62e936948731358ea981703e59568d71">asFlag</a> { [](const std::string_view str) { return std::string{ <a class="el" href="namespace_ogma.html#a112525f03f4f8df1f85558b18b0efc58">controlToken</a> } + str; } }</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a76bab3ec243d7e028f7b7b9ed55440db" name="a76bab3ec243d7e028f7b7b9ed55440db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76bab3ec243d7e028f7b7b9ed55440db">&#9670;&#160;</a></span>AnnotationValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::meta::info &gt; Ogma::Utils::AnnotationValues </td>
+          <td>(</td>
+          <td class="paramtype">std::meta::info</td>          <td class="paramname"><span class="paramname"><em>member</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e6851423dd2287af3b9fdf051e8cb1b" name="a5e6851423dd2287af3b9fdf051e8cb1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6851423dd2287af3b9fdf051e8cb1b">&#9670;&#160;</a></span>ConsumeOneAndForward() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::ConsumeOneAndForward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_ogma.html#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a></td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0d1b1dec9a4daca58b2703aa0b2e9a2" name="af0d1b1dec9a4daca58b2703aa0b2e9a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0d1b1dec9a4daca58b2703aa0b2e9a2">&#9670;&#160;</a></span>ConsumeOneAndForward() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;auto F&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::ConsumeOneAndForward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_ogma.html#aa4304085ebb1a4108247cc9350eaddb4">ArgSpan</a></td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td> -&gt;  <a class="el" href="namespace_ogma.html#a9d769eeb125646755ee34f72b19f8525">Result</a>&lt; std::remove_cvref_t&lt; decltype(*std::invoke(F, args[0]))&gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d100f25acdf778304b2527a191ec802" name="a8d100f25acdf778304b2527a191ec802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d100f25acdf778304b2527a191ec802">&#9670;&#160;</a></span>GetAnnotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Tag, auto... Annotations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; Tag &gt; Ogma::Utils::GetAnnotation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59123fa46339241d7ddc11edff7b00bb" name="a59123fa46339241d7ddc11edff7b00bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59123fa46339241d7ddc11edff7b00bb">&#9670;&#160;</a></span>GetForwardedAnnots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;auto... Annotations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::meta::info &gt; Ogma::Utils::GetForwardedAnnots </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae334a37a3158745b6d11bde18b2052e" name="aae334a37a3158745b6d11bde18b2052e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae334a37a3158745b6d11bde18b2052e">&#9670;&#160;</a></span>GetNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::expected&lt; T, std::string &gt; Ogma::Utils::GetNumber </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">auto...</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>describes the arguments of <code>std::from_chars</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5007bb1bb113c403727f760b78ffa0d9" name="a5007bb1bb113c403727f760b78ffa0d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5007bb1bb113c403727f760b78ffa0d9">&#9670;&#160;</a></span>GetOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::meta::info ... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::meta::info Ogma::Utils::GetOf </td>
+          <td>(</td>
+          <td class="paramtype">std::meta::info</td>          <td class="paramname"><span class="paramname"><em>ref</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c5ec1dfeef23f876b67dc21a1a34662" name="a0c5ec1dfeef23f876b67dc21a1a34662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5ec1dfeef23f876b67dc21a1a34662">&#9670;&#160;</a></span>IsFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ogma::Utils::IsFlag </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>token</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>This is different from <a class="el" href="#af26fe931e9332beb47ae9eeda09ddee5" title="IsValidFlagName">IsValidFlagName</a>, this function only check "is the user trying to enter a
+flag?" when <a class="el" href="#af26fe931e9332beb47ae9eeda09ddee5" title="IsValidFlagName">IsValidFlagName</a> checks "does the flag name (the string without the "&ndash;" part) specified
+has a valid name?". </dd></dl>
+
+</div>
+</div>
+<a id="a71d45065edd58c88fa82238241dd3065" name="a71d45065edd58c88fa82238241dd3065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71d45065edd58c88fa82238241dd3065">&#9670;&#160;</a></span>IsLower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ogma::Utils::IsLower </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59b2d4bf9c0a58f90112ba007633f765" name="a59b2d4bf9c0a58f90112ba007633f765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b2d4bf9c0a58f90112ba007633f765">&#9670;&#160;</a></span>IsOneOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::meta::info ... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ogma::Utils::IsOneOf </td>
+          <td>(</td>
+          <td class="paramtype">std::meta::info</td>          <td class="paramname"><span class="paramname"><em>ref</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7aa34c965b54bc0c5fe6c3551d300561" name="a7aa34c965b54bc0c5fe6c3551d300561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa34c965b54bc0c5fe6c3551d300561">&#9670;&#160;</a></span>IsSpecializationOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ogma::Utils::IsSpecializationOf </td>
+          <td>(</td>
+          <td class="paramtype">std::meta::info</td>          <td class="paramname"><span class="paramname"><em>templ</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d9c53209ddb3d084b3200c4d98da9dd" name="a6d9c53209ddb3d084b3200c4d98da9dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9c53209ddb3d084b3200c4d98da9dd">&#9670;&#160;</a></span>IsUpper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ogma::Utils::IsUpper </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af26fe931e9332beb47ae9eeda09ddee5" name="af26fe931e9332beb47ae9eeda09ddee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26fe931e9332beb47ae9eeda09ddee5">&#9670;&#160;</a></span>IsValidFlagName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ogma::Utils::IsValidFlagName </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A valid flag name is a non-empty ASCII string composed of lowercase letters, digits and hyphens, with no leading or trailing hyphen. This only validates the name spelling. </p><dl class="section note"><dt>Note</dt><dd>This is different from <a class="el" href="#af26fe931e9332beb47ae9eeda09ddee5" title="IsValidFlagName">IsValidFlagName</a>, this function only check "is the user trying to enter a
+flag?" when <a class="el" href="#af26fe931e9332beb47ae9eeda09ddee5" title="IsValidFlagName">IsValidFlagName</a> checks "does the flag name (the string without the "&ndash;" part) specified
+has a valid name?". </dd></dl>
+
+</div>
+</div>
+<a id="adf195085e85d369c0214d5d0eae6269f" name="adf195085e85d369c0214d5d0eae6269f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf195085e85d369c0214d5d0eae6269f">&#9670;&#160;</a></span>MatchedMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::meta::info ... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; std::meta::info, std::meta::info &gt; &gt; Ogma::Utils::MatchedMembers </td>
+          <td>(</td>
+          <td class="paramtype">std::meta::info</td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3516ec240d7deb1016c6eafdb5bb45b" name="af3516ec240d7deb1016c6eafdb5bb45b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3516ec240d7deb1016c6eafdb5bb45b">&#9670;&#160;</a></span>ReflectValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;auto Value&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::meta::info Ogma::Utils::ReflectValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel consteval">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3dbed7ce1c9e26f7c411e20aefc3ad8d" name="a3dbed7ce1c9e26f7c411e20aefc3ad8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dbed7ce1c9e26f7c411e20aefc3ad8d">&#9670;&#160;</a></span>ToLower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Ogma::Utils::ToLower </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a417f1991cc1867bedf55c2d3e28d286f" name="a417f1991cc1867bedf55c2d3e28d286f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a417f1991cc1867bedf55c2d3e28d286f">&#9670;&#160;</a></span>ToUpper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Ogma::Utils::ToUpper </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a62e936948731358ea981703e59568d71" name="a62e936948731358ea981703e59568d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e936948731358ea981703e59568d71">&#9670;&#160;</a></span>asFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::asFlag { [](const std::string_view str) { return std::string{ <a class="el" href="namespace_ogma.html#a112525f03f4f8df1f85558b18b0efc58">controlToken</a> } + str; } }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21743fdc4f16384c08cc76e2abcd380c" name="a21743fdc4f16384c08cc76e2abcd380c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21743fdc4f16384c08cc76e2abcd380c">&#9670;&#160;</a></span>concatByBar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::concatByBar { std::views::filter(<a class="el" href="#ab6acbea3693f6f895f6f09901277b387">notEmpty</a>) | <a class="el" href="#ab6dad765ced55e015c28b46249facceb">joinByBar</a> | std::ranges::to&lt;std::string&gt;() }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af87f6c63b8d085aa94ff1c2fbac161f1" name="af87f6c63b8d085aa94ff1c2fbac161f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87f6c63b8d085aa94ff1c2fbac161f1">&#9670;&#160;</a></span>concatByComma</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::concatByComma { std::views::filter(<a class="el" href="#ab6acbea3693f6f895f6f09901277b387">notEmpty</a>) | <a class="el" href="#a357d15784e38d6482d605d4d9dbb0748">joinByComma</a> | std::ranges::to&lt;std::string&gt;() }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71d8438014d22920a10be44e3ce3d0f1" name="a71d8438014d22920a10be44e3ce3d0f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71d8438014d22920a10be44e3ce3d0f1">&#9670;&#160;</a></span>concatBySpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::concatBySpace { std::views::filter(<a class="el" href="#ab6acbea3693f6f895f6f09901277b387">notEmpty</a>) | <a class="el" href="#aeafb598a18e90b2a8b907d4d808d0d63">joinBySpace</a> | std::ranges::to&lt;std::string&gt;() }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2144ae07115e605f2e82b0e95acd88f1" name="a2144ae07115e605f2e82b0e95acd88f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2144ae07115e605f2e82b0e95acd88f1">&#9670;&#160;</a></span>isEmpty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::isEmpty { []&lt;std::ranges::range R&gt;(R&amp;&amp; str) { return std::ranges::empty(str); } }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6dad765ced55e015c28b46249facceb" name="ab6dad765ced55e015c28b46249facceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6dad765ced55e015c28b46249facceb">&#9670;&#160;</a></span>joinByBar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::joinByBar { std::views::join_with(std::string_view{ &quot; | &quot; }) }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a357d15784e38d6482d605d4d9dbb0748" name="a357d15784e38d6482d605d4d9dbb0748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a357d15784e38d6482d605d4d9dbb0748">&#9670;&#160;</a></span>joinByComma</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::joinByComma { std::views::join_with(std::string_view{ &quot;, &quot; }) }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeafb598a18e90b2a8b907d4d808d0d63" name="aeafb598a18e90b2a8b907d4d808d0d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeafb598a18e90b2a8b907d4d808d0d63">&#9670;&#160;</a></span>joinBySpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::joinBySpace { std::views::join_with(std::string_view{ &quot; &quot; }) }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6acbea3693f6f895f6f09901277b387" name="ab6acbea3693f6f895f6f09901277b387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6acbea3693f6f895f6f09901277b387">&#9670;&#160;</a></span>notEmpty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Ogma::Utils::notEmpty { std::not_fn(<a class="el" href="#a2144ae07115e605f2e82b0e95acd88f1">isEmpty</a>) }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_ogma.html">Ogma</a></li><li class="navelem"><a href="namespace_ogma_1_1_utils.html">Utils</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
